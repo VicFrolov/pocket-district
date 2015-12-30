@@ -126,13 +126,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pocket District" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-m8-0sG">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="92"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="30" width="600" height="92"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="92" id="9Xy-b4-Rsz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="31"/>
-                                <color key="textColor" red="1" green="0.29443541779999999" blue="0.4059352034" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Q3h-IO-TMl">
@@ -174,15 +174,24 @@
                                     <constraint firstAttribute="height" constant="70" id="C9D-zk-WBX"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="XQc-AN-vZz">
+                                <rect key="frame" x="180" y="130" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="kJa-HY-Gbd"/>
+                                    <constraint firstAttribute="width" constant="60" id="w7E-rI-neC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eXZ-m8-0sG" firstAttribute="top" secondItem="g58-UT-ceR" secondAttribute="bottom" id="6EZ-nj-Tuc"/>
+                            <constraint firstItem="eXZ-m8-0sG" firstAttribute="top" secondItem="g58-UT-ceR" secondAttribute="bottom" constant="30" id="6EZ-nj-Tuc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eXZ-m8-0sG" secondAttribute="trailing" constant="-20" id="DGx-Xl-RYd"/>
                             <constraint firstItem="Q3h-IO-TMl" firstAttribute="leading" secondItem="WH3-gA-fFL" secondAttribute="leadingMargin" id="F2N-g1-5j1"/>
                             <constraint firstItem="eXZ-m8-0sG" firstAttribute="centerX" secondItem="WH3-gA-fFL" secondAttribute="centerX" id="M1U-xo-qSC"/>
+                            <constraint firstItem="XQc-AN-vZz" firstAttribute="top" secondItem="eXZ-m8-0sG" secondAttribute="bottom" constant="8" id="MFU-qK-fdu"/>
                             <constraint firstItem="eXZ-m8-0sG" firstAttribute="leading" secondItem="WH3-gA-fFL" secondAttribute="leadingMargin" constant="-20" id="Olh-UU-43m"/>
                             <constraint firstItem="oev-5l-qVC" firstAttribute="top" secondItem="Q3h-IO-TMl" secondAttribute="bottom" constant="15" id="Rfq-wg-InF"/>
+                            <constraint firstItem="XQc-AN-vZz" firstAttribute="centerX" secondItem="WH3-gA-fFL" secondAttribute="centerX" id="VXS-bK-od1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Q3h-IO-TMl" secondAttribute="trailing" id="joZ-mw-1lf"/>
                             <constraint firstItem="Q3h-IO-TMl" firstAttribute="centerX" secondItem="WH3-gA-fFL" secondAttribute="centerX" id="ujs-9Z-bR3"/>
                         </constraints>
@@ -342,6 +351,7 @@
     <resources>
         <image name="Search Filled-50" width="25" height="25"/>
         <image name="about" width="25" height="25"/>
+        <image name="logo" width="100" height="110"/>
         <image name="sandwich-50" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
