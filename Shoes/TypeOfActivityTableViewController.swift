@@ -1,35 +1,36 @@
 //
-//  CuratedViewController.swift
+//  TypeOfActivityTableViewController.swift
 //  Shoes
 //
-//  Created by Victor Frolov on 12/28/15.
+//  Created by Victor Frolov on 12/29/15.
 //  Copyright © 2015 Victor Frolov. All rights reserved.
 //
 
 import UIKit
 
-class CuratedViewController: UITableViewController {
+class TypeOfActivityTableViewController: UITableViewController {
     
     
-    var cities = ["Current Location", "LA", "NY", "MTL"]
-    var slogan = ["Right Here, Right Now", "Winter Break Events", "Best Shows and Musicals", "Best Eats"]
-    var images = ["cl", "LA", "NY", "mtl"]
+    var activities = ["Nightlife", "Day Events", "Sales & Deals", "Hiring", "Eats"]
+    var slogan = ["Get turnt up", "Discover your community", "Because saving money rocks", "Get a job", "Discover happy hour and restaurant buzz near you"]
     
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath
         indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! CuratedSearchTableViewCell
-        
-        // Configure the cell...
-        cell.cityLabel?.text = cities[indexPath.row]
-//        cell.logLabel?.text = slogan[indexPath.row]
-        cell.thumbnailImageView?.image = UIImage(named: images[indexPath.row])
-        return cell
+            let cellIdentifier = "Cell"
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! CuratedSearchTableViewCell
+            
+            // Configure the cell...
+            
+            if indexPath.row % 2 == 0 {
+                cell.backgroundColor = UIColor.darkGrayColor()
+            }
+            
+            cell.cityLabel?.text = activities[indexPath.row]
+            cell.logLabel?.text = slogan[indexPath.row]
+            return cell
     }
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +56,7 @@ class CuratedViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return cities.count
+        return activities.count
     }
 
     /*

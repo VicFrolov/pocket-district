@@ -1,34 +1,35 @@
 //
-//  CuratedViewController.swift
+//  searchResultsTableViewController.swift
 //  Shoes
 //
-//  Created by Victor Frolov on 12/28/15.
+//  Created by Victor Frolov on 12/29/15.
 //  Copyright © 2015 Victor Frolov. All rights reserved.
 //
 
 import UIKit
 
-class CuratedViewController: UITableViewController {
+class searchResultsTableViewController: UITableViewController {
     
-    
-    var cities = ["Current Location", "LA", "NY", "MTL"]
-    var slogan = ["Right Here, Right Now", "Winter Break Events", "Best Shows and Musicals", "Best Eats"]
-    var images = ["cl", "LA", "NY", "mtl"]
+    var username = ["Jack", "Bob", "Tyrone"]
+    var userImage = ["PicJack", "PicBob", "PicTyrone"]
+    var tweetContent = ["Hello world", "I can't believe I didn't kill myself yet", "Twitter is a service I should not be using, yet here I am."]
+    var tweetTime = ["1:03", "Unknown", "4:30"]
     
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath
         indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! CuratedSearchTableViewCell
-        
-        // Configure the cell...
-        cell.cityLabel?.text = cities[indexPath.row]
-//        cell.logLabel?.text = slogan[indexPath.row]
-        cell.thumbnailImageView?.image = UIImage(named: images[indexPath.row])
-        return cell
+            let cellIdentifier = "Cell"
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! searchResultsTableViewCell
+            
+            // Configure the cell...
+            cell.usernameLabel?.text = username[indexPath.row]
+            cell.tweetLabel?.text = tweetContent[indexPath.row]
+            cell.tweetTimeLabel?.text = tweetTime[indexPath.row]
+            cell.userImageLabel?.image = UIImage(named: "cafelore")
+            return cell
     }
-    
+
     
 
     override func viewDidLoad() {
@@ -55,7 +56,7 @@ class CuratedViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return cities.count
+        return username.count
     }
 
     /*
