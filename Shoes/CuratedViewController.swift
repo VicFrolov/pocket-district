@@ -11,7 +11,7 @@ import UIKit
 class CuratedViewController: UITableViewController {
     
     
-    var cities = ["Current Location", "LA", "NY", "MTL"]
+    var cities = ["Near Me", "Los Angeles", "New York", "Montreal"]
     var slogan = ["Right Here, Right Now", "Winter Break Events", "Best Shows and Musicals", "Best Eats"]
     var images = ["cl", "LA", "NY", "mtl"]
     
@@ -24,13 +24,12 @@ class CuratedViewController: UITableViewController {
         
         // Configure the cell...
         cell.cityLabel?.text = cities[indexPath.row]
-//        cell.logLabel?.text = slogan[indexPath.row]
+        cell.logLabel?.text = slogan[indexPath.row]
         cell.thumbnailImageView?.image = UIImage(named: images[indexPath.row])
         return cell
     }
     
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

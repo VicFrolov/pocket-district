@@ -22,7 +22,6 @@ class LoginPageViewController: UIViewController {
         return true
     }
 
-
     override func viewDidLoad() {
         
         let theURL = NSBundle.mainBundle().URLForResource("background", withExtension: "mp4")

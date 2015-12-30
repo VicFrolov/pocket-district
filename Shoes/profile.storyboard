@@ -38,7 +38,7 @@
         <scene sceneID="hRD-KG-wzg">
             <objects>
                 <navigationController id="9zZ-JQ-7qP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="Contacts-50" id="HPp-By-zXk"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Contacts-50" id="HPp-By-zXk" userLabel="Profile"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics">
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </simulatedTabBarMetrics>
