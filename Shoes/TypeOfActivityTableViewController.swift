@@ -2,8 +2,8 @@
 //  TypeOfActivityTableViewController.swift
 //  Shoes
 //
-//  Created by Victor Frolov on 12/29/15.
-//  Copyright © 2015 Victor Frolov. All rights reserved.
+//  Created by Victor Frolov on 1/2/16.
+//  Copyright © 2016 Victor Frolov. All rights reserved.
 //
 
 import UIKit
@@ -11,26 +11,23 @@ import UIKit
 class TypeOfActivityTableViewController: UITableViewController {
     
     
-    var activities = ["Nightlife", "Day Events", "Sales & Deals", "Hiring", "Eats"]
-    var slogan = ["Get turnt up", "Discover your community", "Because saving money rocks", "Get a job", "Discover happy hour and restaurant buzz near you"]
+    var activityNames = ["Nightlife", "Eats", "Day Stuff", "Hiring", ""]
+    
+    var activityPic = ["nightlife", "eatsPic", "dayPic", "jobsPic", "salesPic"]
+    
+    var slogan = ["Hit the town", "Best grub in town", "find events", "get a job", "because saving money rocks"]
     
     
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath
-        indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             let cellIdentifier = "Cell"
-            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! CuratedSearchTableViewCell
-            
-            // Configure the cell...
-            
-            if indexPath.row % 2 == 0 {
-                cell.backgroundColor = UIColor.darkGrayColor()
-            }
-            
-            cell.cityLabel?.text = activities[indexPath.row]
-            cell.logLabel?.text = slogan[indexPath.row]
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TypeOfActivityTableViewCell
+            cell.activityLabel?.text = activityNames[indexPath.row]
+            cell.bgImage?.image = UIImage(named: activityPic[indexPath.row])
+            cell.sloganLabel?.text = slogan[indexPath.row]
             return cell
     }
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +53,7 @@ class TypeOfActivityTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return activities.count
+        return activityNames.count
     }
 
     /*

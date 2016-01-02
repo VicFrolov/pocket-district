@@ -22,55 +22,67 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctg-br-t4S">
+                                            <rect key="frame" x="563" y="8" width="23.5" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tweetLabel" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prq-qn-UpK">
+                                            <rect key="frame" x="76" y="29" width="400" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UKR-2L-r6o">
                                             <rect key="frame" x="8" y="8" width="59" height="58"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="59" id="74r-kW-iC7"/>
                                             </constraints>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="TopLeft" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s3J-q7-2LC">
-                                            <rect key="frame" x="75" y="8" width="400" height="80"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tweetTimeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctg-br-t4S">
-                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="14.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K59-St-Fyn">
-                                                    <rect key="frame" x="0.0" y="14.5" width="400" height="49.5"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="usernameLabel">
-                                                            <attributes>
-                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tweetLabel" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prq-qn-UpK">
-                                                    <rect key="frame" x="0.0" y="64" width="400" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="400" id="N1T-1l-f0x"/>
-                                                <constraint firstAttribute="height" constant="80" id="c4H-p0-0OH"/>
-                                            </constraints>
-                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K59-St-Fyn">
+                                            <rect key="frame" x="75" y="5" width="400" height="21"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="usernameLabel">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="ctg-br-t4S" firstAttribute="centerX" secondItem="W8m-VW-b4I" secondAttribute="centerX" id="1XS-H3-fJA"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="UKR-2L-r6o" secondAttribute="bottom" constant="45.5" id="3N5-Sz-rie"/>
+                                        <constraint firstItem="K59-St-Fyn" firstAttribute="leading" secondItem="UKR-2L-r6o" secondAttribute="trailing" constant="8" id="6Nb-e4-TVE"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ctg-br-t4S" secondAttribute="trailing" constant="5" id="8VE-Fq-wE7"/>
+                                        <constraint firstItem="Prq-qn-UpK" firstAttribute="top" secondItem="K59-St-Fyn" secondAttribute="bottom" constant="3" id="CR6-RQ-qU6"/>
                                         <constraint firstItem="UKR-2L-r6o" firstAttribute="leading" secondItem="W8m-VW-b4I" secondAttribute="leadingMargin" id="EXs-dt-ifY"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="K59-St-Fyn" secondAttribute="trailing" constant="117" id="IyD-Qt-XxQ"/>
                                         <constraint firstItem="UKR-2L-r6o" firstAttribute="top" secondItem="W8m-VW-b4I" secondAttribute="topMargin" id="LT5-Ah-lFI"/>
-                                        <constraint firstItem="s3J-q7-2LC" firstAttribute="leading" secondItem="UKR-2L-r6o" secondAttribute="trailing" constant="8" id="Lzq-8w-EAx"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="s3J-q7-2LC" secondAttribute="bottom" constant="24" id="vVV-Uw-Ldh"/>
-                                        <constraint firstItem="s3J-q7-2LC" firstAttribute="top" secondItem="W8m-VW-b4I" secondAttribute="topMargin" id="voE-rg-QWy"/>
+                                        <constraint firstItem="K59-St-Fyn" firstAttribute="top" secondItem="W8m-VW-b4I" secondAttribute="topMargin" constant="-3" id="LZh-hg-0l2"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ctg-br-t4S" secondAttribute="bottom" constant="5" id="VPq-Pa-84a"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Prq-qn-UpK" secondAttribute="trailing" constant="116" id="dZb-bi-JxB"/>
+                                        <constraint firstItem="ctg-br-t4S" firstAttribute="centerY" secondItem="W8m-VW-b4I" secondAttribute="centerY" id="djj-CJ-EAn"/>
+                                        <constraint firstItem="ctg-br-t4S" firstAttribute="leading" secondItem="W8m-VW-b4I" secondAttribute="leadingMargin" constant="488" id="eaG-Yb-lQr"/>
+                                        <constraint firstItem="ctg-br-t4S" firstAttribute="trailing" secondItem="W8m-VW-b4I" secondAttribute="trailingMargin" constant="10" id="kk3-mM-Ygx"/>
+                                        <constraint firstItem="ctg-br-t4S" firstAttribute="bottom" secondItem="W8m-VW-b4I" secondAttribute="bottomMargin" id="lv7-Sh-zgJ"/>
+                                        <constraint firstItem="Prq-qn-UpK" firstAttribute="leading" secondItem="UKR-2L-r6o" secondAttribute="trailing" constant="9" id="p9X-9Z-sgt"/>
+                                        <constraint firstItem="ctg-br-t4S" firstAttribute="top" secondItem="W8m-VW-b4I" secondAttribute="topMargin" id="rgg-PH-tR3"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="1XS-H3-fJA"/>
+                                            <exclude reference="VPq-Pa-84a"/>
+                                            <exclude reference="djj-CJ-EAn"/>
+                                            <exclude reference="eaG-Yb-lQr"/>
+                                            <exclude reference="kk3-mM-Ygx"/>
+                                            <exclude reference="lv7-Sh-zgJ"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="tweetLabel" destination="Prq-qn-UpK" id="qd6-OD-sA9"/>
@@ -109,7 +121,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Njd-ln-ld7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="349"/>
+            <point key="canvasLocation" x="1232" y="-399"/>
         </scene>
     </scenes>
     <resources>

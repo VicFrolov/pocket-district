@@ -2,13 +2,17 @@
 //  TypeOfActivityTableViewCell.swift
 //  Shoes
 //
-//  Created by Victor Frolov on 12/29/15.
-//  Copyright © 2015 Victor Frolov. All rights reserved.
+//  Created by Victor Frolov on 1/2/16.
+//  Copyright © 2016 Victor Frolov. All rights reserved.
 //
 
 import UIKit
 
 class TypeOfActivityTableViewCell: UITableViewCell {
+    
+    @IBOutlet var activityLabel: UILabel!
+    @IBOutlet var sloganLabel: UILabel!
+    @IBOutlet var bgImage: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

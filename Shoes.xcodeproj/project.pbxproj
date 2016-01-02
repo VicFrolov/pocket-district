@@ -13,6 +13,8 @@
 		383CA6781C328B2E0021D4FF /* searchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383CA6771C328B2E0021D4FF /* searchResultsTableViewController.swift */; };
 		383CA67A1C328F1C0021D4FF /* searchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383CA6791C328F1C0021D4FF /* searchResultsTableViewCell.swift */; };
 		383CA67C1C32917E0021D4FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383CA67B1C32917E0021D4FF /* Main.storyboard */; };
+		386A228D1C37D68800871009 /* TypeOfActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386A228C1C37D68800871009 /* TypeOfActivityTableViewController.swift */; };
+		386A228F1C37DD1700871009 /* TypeOfActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386A228E1C37DD1700871009 /* TypeOfActivityTableViewCell.swift */; };
 		38C794D91C325A870081158F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C794D81C325A870081158F /* AppDelegate.swift */; };
 		38C794E01C325A870081158F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C794DF1C325A870081158F /* Assets.xcassets */; };
 		38C794E31C325A870081158F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C794E11C325A870081158F /* LaunchScreen.storyboard */; };
@@ -20,8 +22,6 @@
 		38C794F91C325B0E0081158F /* CuratedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C794F81C325B0E0081158F /* CuratedViewController.swift */; };
 		38C794FB1C325F660081158F /* CuratedSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C794FA1C325F660081158F /* CuratedSearchTableViewCell.swift */; };
 		38FD41361C32ACEC005F32CB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FD41351C32ACEC005F32CB /* MapKit.framework */; };
-		38FD41381C32B240005F32CB /* TypeOfActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD41371C32B240005F32CB /* TypeOfActivityTableViewCell.swift */; };
-		38FD413A1C32B257005F32CB /* TypeOfActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD41391C32B257005F32CB /* TypeOfActivityTableViewController.swift */; };
 		38FD413E1C32BDB8005F32CB /* background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 38FD413D1C32BDB8005F32CB /* background.mp4 */; };
 		38FD41401C32BEBB005F32CB /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 38FD413F1C32BEBB005F32CB /* test.gif */; };
 		38FD41421C32BFC3005F32CB /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD41411C32BFC3005F32CB /* LoginPageViewController.swift */; };
@@ -44,6 +44,8 @@
 		383CA6771C328B2E0021D4FF /* searchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchResultsTableViewController.swift; sourceTree = "<group>"; };
 		383CA6791C328F1C0021D4FF /* searchResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchResultsTableViewCell.swift; sourceTree = "<group>"; };
 		383CA67B1C32917E0021D4FF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		386A228C1C37D68800871009 /* TypeOfActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfActivityTableViewController.swift; sourceTree = "<group>"; };
+		386A228E1C37DD1700871009 /* TypeOfActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfActivityTableViewCell.swift; sourceTree = "<group>"; };
 		38C794D51C325A870081158F /* Shoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C794D81C325A870081158F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38C794DF1C325A870081158F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,8 +57,6 @@
 		38C794F81C325B0E0081158F /* CuratedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuratedViewController.swift; sourceTree = "<group>"; };
 		38C794FA1C325F660081158F /* CuratedSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuratedSearchTableViewCell.swift; sourceTree = "<group>"; };
 		38FD41351C32ACEC005F32CB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		38FD41371C32B240005F32CB /* TypeOfActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfActivityTableViewCell.swift; sourceTree = "<group>"; };
-		38FD41391C32B257005F32CB /* TypeOfActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfActivityTableViewController.swift; sourceTree = "<group>"; };
 		38FD413D1C32BDB8005F32CB /* background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background.mp4; sourceTree = "<group>"; };
 		38FD413F1C32BEBB005F32CB /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		38FD41411C32BFC3005F32CB /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
@@ -117,9 +117,9 @@
 				38C794FA1C325F660081158F /* CuratedSearchTableViewCell.swift */,
 				383CA6771C328B2E0021D4FF /* searchResultsTableViewController.swift */,
 				383CA6791C328F1C0021D4FF /* searchResultsTableViewCell.swift */,
-				38FD41371C32B240005F32CB /* TypeOfActivityTableViewCell.swift */,
-				38FD41391C32B257005F32CB /* TypeOfActivityTableViewController.swift */,
 				38FD41411C32BFC3005F32CB /* LoginPageViewController.swift */,
+				386A228C1C37D68800871009 /* TypeOfActivityTableViewController.swift */,
+				386A228E1C37DD1700871009 /* TypeOfActivityTableViewCell.swift */,
 			);
 			path = Shoes;
 			sourceTree = "<group>";
@@ -247,13 +247,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				383CA6781C328B2E0021D4FF /* searchResultsTableViewController.swift in Sources */,
+				386A228F1C37DD1700871009 /* TypeOfActivityTableViewCell.swift in Sources */,
 				383CA67A1C328F1C0021D4FF /* searchResultsTableViewCell.swift in Sources */,
 				38C794FB1C325F660081158F /* CuratedSearchTableViewCell.swift in Sources */,
-				38FD413A1C32B257005F32CB /* TypeOfActivityTableViewController.swift in Sources */,
+				386A228D1C37D68800871009 /* TypeOfActivityTableViewController.swift in Sources */,
 				38C794D91C325A870081158F /* AppDelegate.swift in Sources */,
 				38FD41421C32BFC3005F32CB /* LoginPageViewController.swift in Sources */,
 				38C794F91C325B0E0081158F /* CuratedViewController.swift in Sources */,
-				38FD41381C32B240005F32CB /* TypeOfActivityTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
