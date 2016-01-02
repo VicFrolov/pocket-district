@@ -29,6 +29,23 @@ class searchResultsTableViewController: UITableViewController {
             cell.userImageLabel?.image = UIImage(named: "cafelore")
             return cell
     }
+    
+    
+    //show delete button
+    override func tableView(tableView: UITableView, commitEditingStyle
+        editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath:
+        NSIndexPath) {
+        
+        if editingStyle == .Delete {
+            username.removeAtIndex(indexPath.row)
+            userImage.removeAtIndex(indexPath.row)
+            tweetContent.removeAtIndex(indexPath.row)
+            tweetTime.removeAtIndex(indexPath.row)
+            
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Left)
+
+        }
+    }
 
     
 

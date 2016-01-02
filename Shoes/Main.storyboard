@@ -10,16 +10,16 @@
         <scene sceneID="T7M-Ch-uRj">
             <objects>
                 <tableViewController title="Location" id="Gxn-YJ-eFv" customClass="CuratedViewController" customModule="Shoes" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" id="1Vr-QR-BzG">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="300" sectionHeaderHeight="18" sectionFooterHeight="18" id="1Vr-QR-BzG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="300" id="5G8-DR-Fp8" customClass="CuratedSearchTableViewCell" customModule="Shoes" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="600" height="300"/>
+                                <rect key="frame" x="0.0" y="93.5" width="600" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5G8-DR-Fp8" id="UXv-Ab-zGz">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="299.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xNT-JV-sk4">
@@ -84,7 +84,9 @@
                             <outlet property="delegate" destination="Gxn-YJ-eFv" id="EAh-b1-fow"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="e98-be-m7C"/>
+                    <navigationItem key="navigationItem" id="e98-be-m7C">
+                        <barButtonItem key="leftBarButtonItem" title="Button" id="B1W-p7-8jv"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kah-Dh-ReZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,13 +96,13 @@
         <scene sceneID="3Fu-Gg-dCM">
             <objects>
                 <tableViewController title="Choose a Category" id="Sdr-It-LYT" customClass="TypeOfActivityTableViewController" customModule="Shoes" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" id="NLw-w3-AXn">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="300" sectionHeaderHeight="18" sectionFooterHeight="18" id="NLw-w3-AXn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="300" id="i3Z-dl-MRl" customClass="TypeOfActivityTableViewCell" customModule="Shoes" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="600" height="300"/>
+                                <rect key="frame" x="0.0" y="93.5" width="600" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i3Z-dl-MRl" id="vaa-RL-26d">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="299.5"/>

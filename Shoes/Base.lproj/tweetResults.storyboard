@@ -10,13 +10,13 @@
         <scene sceneID="YNs-lb-Dpd">
             <objects>
                 <tableViewController title="Tweet Results" id="YHi-io-zuw" customClass="searchResultsTableViewController" customModule="Shoes" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="FjU-TW-McA">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="120" sectionHeaderHeight="18" sectionFooterHeight="18" id="FjU-TW-McA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="120" id="h3M-am-0gZ" customClass="searchResultsTableViewCell" customModule="Shoes" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="120"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="120" id="h3M-am-0gZ" customClass="searchResultsTableViewCell" customModule="Shoes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="113.5" width="600" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h3M-am-0gZ" id="W8m-VW-b4I">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
