@@ -31,20 +31,33 @@ class searchResultsTableViewController: UITableViewController {
     }
     
     
-    //show delete button
-    override func tableView(tableView: UITableView, commitEditingStyle
-        editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath:
-        NSIndexPath) {
-        
-        if editingStyle == .Delete {
-            username.removeAtIndex(indexPath.row)
-            userImage.removeAtIndex(indexPath.row)
-            tweetContent.removeAtIndex(indexPath.row)
-            tweetTime.removeAtIndex(indexPath.row)
+    //MARKER: Swipe more and delete for searches
+    
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+            // Social Sharing Button
+        let shareAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Share", handler: {
+                (action, indexPath) -> Void in let defaultText = "Check this out: \(self.username[indexPath.row]) writes \(self.tweetContent[indexPath.row])"
+                    let activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
+                    self.presentViewController(activityController, animated: true, completion: nil)
+        })
+        // Delete button
+        let deleteAction = UITableViewRowAction(style:
+            UITableViewRowActionStyle.Default, title: "Delete",handler: { (action,
+            indexPath) -> Void in
+            // Delete the row from the data source
+            self.username.removeAtIndex(indexPath.row)
+            self.userImage.removeAtIndex(indexPath.row)
+            self.tweetContent.removeAtIndex(indexPath.row)
+            self.tweetTime.removeAtIndex(indexPath.row)
             
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Left)
-
-        }
+        })
+        
+        
+        shareAction.backgroundColor = UIColor(red: 28.0/255.0, green: 165.0/255.0,
+            blue: 253.0/255.0, alpha: 1.0)
+        
+        return [deleteAction, shareAction]
     }
 
     
