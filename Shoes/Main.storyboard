@@ -155,10 +155,10 @@
             </objects>
             <point key="canvasLocation" x="2641" y="-901"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Location-->
         <scene sceneID="CxA-xZ-8QB">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cPy-0d-2rk" sceneMemberID="viewController">
+                <tabBarController title="Location" automaticallyAdjustsScrollViewInsets="NO" id="cPy-0d-2rk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="fill" id="NmX-KF-Vqq">
                         <autoresizingMask key="autoresizingMask"/>
@@ -325,7 +325,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUB-8x-GBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1721" y="-2263"/>
+            <point key="canvasLocation" x="2025" y="-1945"/>
         </scene>
         <!--More-->
         <scene sceneID="X3U-s1-tQs">
@@ -342,7 +342,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBY-wn-tzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959" y="-2001"/>
+            <point key="canvasLocation" x="1247" y="-1945"/>
         </scene>
         <!--Location-->
         <scene sceneID="ZyV-5C-p64">
