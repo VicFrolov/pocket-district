@@ -11,16 +11,12 @@ import AVFoundation
 
 
 class LoginPageViewController: UIViewController {
-    
     var avPlayer: AVPlayer!
     var avPlayerLayer: AVPlayerLayer!
     var paused: Bool = false
     
 
-
     override func viewDidLoad() {
-        
-        
         //hide the navbar
         UIApplication.sharedApplication().statusBarHidden = true
         
