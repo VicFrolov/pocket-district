@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Location-->
+        <!--location-->
         <scene sceneID="T7M-Ch-uRj">
             <objects>
-                <tableViewController title="Location" id="Gxn-YJ-eFv" customClass="CuratedViewController" customModule="Shoes" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="location" id="Gxn-YJ-eFv" customClass="CuratedViewController" customModule="Shoes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="300" sectionHeaderHeight="18" sectionFooterHeight="18" id="1Vr-QR-BzG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -355,6 +355,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Rla-4s-puS">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.10497488967295501" green="0.32086058822678526" blue="0.51568509615384617" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Gxn-YJ-eFv" kind="relationship" relationship="rootViewController" id="VTl-vE-psU"/>
                     </connections>

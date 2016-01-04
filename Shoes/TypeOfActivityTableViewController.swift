@@ -32,11 +32,22 @@ class TypeOfActivityTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // remove spacing between table and navbar
+        self.automaticallyAdjustsScrollViewInsets = false
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    
+    //forces the navbar to appear, even if it disappeared in previous controller
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnSwipe = true
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     override func didReceiveMemoryWarning() {

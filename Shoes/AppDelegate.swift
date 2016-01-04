@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSFontAttributeName:barFont]
         }
         
+        
+        
         return true
     }
 
