@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSFontAttributeName:barFont]
         }
         
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
         
         
         return true

@@ -16,14 +16,16 @@ class LoginPageViewController: UIViewController {
     var avPlayerLayer: AVPlayerLayer!
     var paused: Bool = false
     
-    
-    //hide status bar
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
+
 
     override func viewDidLoad() {
         
+        
+        //hide the navbar
+        UIApplication.sharedApplication().statusBarHidden = true
+        
+        
+        //display video playing in bg
         let theURL = NSBundle.mainBundle().URLForResource("background", withExtension: "mp4")
         
         avPlayer = AVPlayer(URL: theURL!)
