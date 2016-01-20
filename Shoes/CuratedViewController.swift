@@ -10,11 +10,9 @@ import UIKit
 
 class CuratedViewController: UITableViewController {
     
-    
     var cities = ["Near Me", "Los Angeles", "New York", "Montreal"]
     var slogan = ["Right Here, Right Now", "Winter Break Events", "Best Shows and Musicals", "Best Eats"]
     var images = ["cl", "LA", "NY", "mtl"]
-    
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath
@@ -28,7 +26,6 @@ class CuratedViewController: UITableViewController {
         cell.thumbnailImageView?.image = UIImage(named: images[indexPath.row])
         return cell
     }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +40,7 @@ class CuratedViewController: UITableViewController {
 
         // remove spacing between table and navbar
         self.automaticallyAdjustsScrollViewInsets = false
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

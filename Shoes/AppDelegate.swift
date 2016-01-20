@@ -23,14 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //text color on navbar
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         //font type and size
-        if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
+        if let barFont = UIFont(name: "Avenir-Light", size: 12.0) {
             UINavigationBar.appearance().titleTextAttributes =
             [NSForegroundColorAttributeName:UIColor.whiteColor(),
             NSFontAttributeName:barFont]
         }
         
+        //set status bar to white
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
+        
+
         
         
         return true
