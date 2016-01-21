@@ -89,7 +89,7 @@
                                     <outlet property="tweetTimeLabel" destination="ctg-br-t4S" id="Lob-R7-WHc"/>
                                     <outlet property="userImageLabel" destination="UKR-2L-r6o" id="LQn-4d-LTM"/>
                                     <outlet property="usernameLabel" destination="K59-St-Fyn" id="ZeI-dI-yHC"/>
-                                    <segue destination="Cfz-0D-QGo" kind="show" id="Q7d-Uz-CPT"/>
+                                    <segue destination="Cfz-0D-QGo" kind="showDetail" id="Q7d-Uz-CPT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

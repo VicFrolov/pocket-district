@@ -225,7 +225,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMJ-LH-NNI">
                                         <rect key="frame" x="0.0" y="53.5" width="560" height="46.5"/>
-                                        <color key="backgroundColor" red="0.1049748897" green="0.32086058820000002" blue="0.51568509620000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -320,23 +320,40 @@
                                     <segue destination="Gxn-YJ-eFv" kind="embed" id="L6b-nC-uy8"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dw-gq-PGB">
+                                <rect key="frame" x="0.0" y="-10" width="600" height="31"/>
+                                <color key="backgroundColor" red="0.88235294117647056" green="0.11764705882352941" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="sd4-SA-1Dv"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Bba-Zz-K43" firstAttribute="centerX" secondItem="fek-gy-q2s" secondAttribute="centerX" id="4J1-pD-FSk"/>
                             <constraint firstItem="Bba-Zz-K43" firstAttribute="leading" secondItem="fek-gy-q2s" secondAttribute="leading" id="9mN-OG-fB3"/>
                             <constraint firstItem="Bba-Zz-K43" firstAttribute="centerY" secondItem="fek-gy-q2s" secondAttribute="centerY" id="Hng-I5-T1c"/>
+                            <constraint firstItem="6dw-gq-PGB" firstAttribute="leading" secondItem="fek-gy-q2s" secondAttribute="leadingMargin" constant="-20" id="b8o-wg-LJu"/>
+                            <constraint firstItem="6dw-gq-PGB" firstAttribute="top" secondItem="fek-gy-q2s" secondAttribute="topMargin" constant="-10" id="mLo-9v-hnK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6dw-gq-PGB" secondAttribute="trailing" constant="-20" id="sXl-1a-odN"/>
                             <constraint firstItem="Bba-Zz-K43" firstAttribute="bottom" secondItem="dov-9Y-Lhn" secondAttribute="top" constant="49" id="wnc-th-6pc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bnZ-Sr-jDe">
                         <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="YhL-xv-ujL">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VQ9-Fj-emD">
+                                <rect key="frame" x="20" y="7" width="20" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </barButtonItem>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="vTD-Me-Cvc">
-                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <rect key="frame" x="198" y="7.5" width="204" height="29"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
-                                <segment title="First"/>
-                                <segment title="Second"/>
+                                <segment title="Curated"/>
+                                <segment title="Elaborate"/>
                             </segments>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </segmentedControl>
