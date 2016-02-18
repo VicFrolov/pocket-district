@@ -10,10 +10,11 @@ import UIKit
 
 class searchResultsTableViewController: UITableViewController {
     
-    var username = ["Jack", "Bob", "Tyrone"]
-    var userImage = ["PicJack", "PicBob", "PicTyrone"]
-    var tweetContent = ["Hello world", "I can't believe I didn't kill myself yet", "Twitter is a service I should not be using, yet here I am."]
-    var tweetTime = ["1:03", "Unknown", "4:30"]
+    var username = ["Jack", "Bob", "Tyrone", "Jack", "Bob", "Tyrone"]
+    var userImage = ["PicJack", "PicBob", "PicTyrone", "PicJack", "PicBob", "PicTyrone"]
+    var tweetContent = ["Hello world", "I can't believe I didn't kill myself yet", "Twitter is a service I should not be using, yet here I am.",
+        "Hello world", "I can't believe I didn't kill myself yet", "Twitter is a service I should not be using, yet here I am."]
+    var tweetTime = ["1:03", "Unknown", "4:30", "1:03", "Unknown", "4:30"]
     
     
     
@@ -60,13 +61,8 @@ class searchResultsTableViewController: UITableViewController {
         return [deleteAction, shareAction]
     }
 
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
