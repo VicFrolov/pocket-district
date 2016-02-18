@@ -22,7 +22,7 @@ class CuratedViewController: UITableViewController {
         
         // Configure the cell...
         cell.cityLabel?.text = cities[indexPath.row]
-        cell.logLabel?.text = slogan[indexPath.row]
+        //cell.logLabel?.text = slogan[indexPath.row]
         cell.thumbnailImageView?.image = UIImage(named: images[indexPath.row])
         return cell
     }
