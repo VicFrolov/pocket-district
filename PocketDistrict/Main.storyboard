@@ -253,7 +253,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="1c0-w7-8cw" kind="show" id="TYU-KX-bOr"/>
+                                            <segue destination="1c0-w7-8cw" kind="show" id="hJb-Gk-eik"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -564,10 +564,10 @@
             </objects>
             <point key="canvasLocation" x="2027" y="-950"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Account View Controller-->
         <scene sceneID="vJl-Ua-vCd">
             <objects>
-                <viewController storyboardIdentifier="createAccount" id="1c0-w7-8cw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="createAccount" id="1c0-w7-8cw" customClass="CreateAccountViewController" customModule="PocketDistrict" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VWV-tf-x6J"/>
                         <viewControllerLayoutGuide type="bottom" id="6Eo-H9-8Hl"/>
@@ -626,7 +626,7 @@
                                 </constraints>
                                 <state key="normal" title="Create Account"/>
                                 <connections>
-                                    <segue destination="cPy-0d-2rk" kind="show" id="ad7-81-2b9"/>
+                                    <action selector="createAccount:" destination="1c0-w7-8cw" eventType="touchUpInside" id="hON-3W-JQc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lt0-cB-hR0">
@@ -637,6 +637,7 @@
                                 </constraints>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
+                                    <action selector="cancelCreateAccount:" destination="1c0-w7-8cw" eventType="touchUpInside" id="BH1-kg-oyp"/>
                                     <segue destination="1w1-cn-F1o" kind="unwind" unwindAction="unwindToMainMenu:" id="fuH-gH-k0e"/>
                                 </connections>
                             </button>
@@ -657,6 +658,12 @@
                             <constraint firstItem="ZhS-xc-igJ" firstAttribute="leading" secondItem="FN4-Uq-0fI" secondAttribute="leadingMargin" constant="20" id="zmk-Hq-LPj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="x5f-hu-VK3" id="c1g-1o-OwJ"/>
+                        <outlet property="passwordField" destination="Di2-kw-oyn" id="RKb-Ua-SrG"/>
+                        <outlet property="usernameField" destination="xAC-e7-4bg" id="tSA-28-Y7f"/>
+                        <segue destination="cPy-0d-2rk" kind="show" identifier="NewUserLoggedIn" id="tY6-jx-Fjv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWI-s1-Tae" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="1w1-cn-F1o" userLabel="Exit" sceneMemberID="exit"/>
@@ -1202,7 +1209,7 @@
         <image name="logo" width="100" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ad7-81-2b9"/>
+        <segue reference="tY6-jx-Fjv"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.10497488967295501" green="0.32086058822678526" blue="0.51568509615384617" alpha="1" colorSpace="calibratedRGB"/>
 </document>
