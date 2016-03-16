@@ -26,6 +26,7 @@
 		3860FFBC1C9637010095A2BF /* TypeOfActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFAD1C9637010095A2BF /* TypeOfActivityTableViewController.swift */; };
 		3860FFBE1C9637210095A2BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3860FFBD1C9637210095A2BF /* Default-568h@2x.png */; };
 		3860FFC01C9637CB0095A2BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3860FFBF1C9637CB0095A2BF /* MapKit.framework */; };
+		38D752BF1C98FB99007387AA /* resultsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D752BE1C98FB99007387AA /* resultsContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		3860FFAD1C9637010095A2BF /* TypeOfActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TypeOfActivityTableViewController.swift; path = ../TypeOfActivityTableViewController.swift; sourceTree = "<group>"; };
 		3860FFBD1C9637210095A2BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3860FFBF1C9637CB0095A2BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		38D752BE1C98FB99007387AA /* resultsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultsContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		3860FF871C9635FA0095A2BF /* PocketDistrict */ = {
 			isa = PBXGroup;
 			children = (
+				3860FF911C9635FA0095A2BF /* Assets.xcassets */,
 				3860FF9F1C9637010095A2BF /* AppDelegate.swift */,
 				3860FFA01C9637010095A2BF /* background.mp4 */,
 				3860FFA11C9637010095A2BF /* CuratedSearchTableViewCell.swift */,
@@ -102,7 +105,7 @@
 				3860FFAD1C9637010095A2BF /* TypeOfActivityTableViewController.swift */,
 				3860FF9E1C9637000095A2BF /* PocketDistrict-Bridging-Header.h */,
 				3860FF9C1C9636BB0095A2BF /* Main.storyboard */,
-				3860FF911C9635FA0095A2BF /* Assets.xcassets */,
+				38D752BE1C98FB99007387AA /* resultsContainerViewController.swift */,
 			);
 			path = PocketDistrict;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				3860FFB41C9637010095A2BF /* LoginPageViewController.swift in Sources */,
 				3860FFBC1C9637010095A2BF /* TypeOfActivityTableViewController.swift in Sources */,
 				3860FFB91C9637010095A2BF /* searchResultsTableViewCell.swift in Sources */,
+				38D752BF1C98FB99007387AA /* resultsContainerViewController.swift in Sources */,
 				3860FFB81C9637010095A2BF /* searchResultsDetailedViewController.swift in Sources */,
 				3860FFB61C9637010095A2BF /* ParentSearchViewController.swift in Sources */,
 				3860FFBA1C9637010095A2BF /* searchResultsTableViewController.swift in Sources */,
@@ -334,6 +338,7 @@
 				3860FF9B1C9635FA0095A2BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

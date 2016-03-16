@@ -778,10 +778,10 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="120" id="HfN-vb-HdA" customClass="searchResultsTableViewCell" customModule="PocketDistrict" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="49.5" width="600" height="120"/>
+                                <rect key="frame" x="0.0" y="50" width="600" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HfN-vb-HdA" id="qD3-fu-rhl">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbc-QF-nBX">
@@ -866,7 +866,36 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynx-Ta-nai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2600" y="-236.5"/>
+            <point key="canvasLocation" x="2644" y="-373.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yce-me-qJi">
+            <objects>
+                <viewController id="ITB-Px-wG6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VMy-9Y-WJn"/>
+                        <viewControllerLayoutGuide type="bottom" id="U3y-YE-Hy0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VnJ-vz-YDa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="507"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BQb-2I-clM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="507"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BQb-2I-clM" firstAttribute="leading" secondItem="VnJ-vz-YDa" secondAttribute="leadingMargin" constant="-20" id="DIa-Xy-Fse"/>
+                            <constraint firstItem="U3y-YE-Hy0" firstAttribute="top" secondItem="BQb-2I-clM" secondAttribute="bottom" id="ORh-gZ-dQF"/>
+                            <constraint firstItem="BQb-2I-clM" firstAttribute="top" secondItem="VMy-9Y-WJn" secondAttribute="bottom" id="iCy-7X-196"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BQb-2I-clM" secondAttribute="trailing" constant="-20" id="vx0-wh-YOf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9TA-7Z-vth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2650" y="271.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HGN-ha-F9b">
@@ -950,7 +979,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kwB-Re-4oj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3332" y="-236"/>
+            <point key="canvasLocation" x="3448" y="-384"/>
         </scene>
         <!--Tweet Results-->
         <scene sceneID="jwJ-1q-mRJ">
@@ -974,10 +1003,10 @@
             </objects>
             <point key="canvasLocation" x="1241" y="-163"/>
         </scene>
-        <!--View Controller-->
+        <!--Results Container View Controller-->
         <scene sceneID="ySr-a8-Usu">
             <objects>
-                <viewController id="1Ih-ld-G2x" sceneMemberID="viewController">
+                <viewController id="1Ih-ld-G2x" customClass="resultsContainerViewController" customModule="PocketDistrict" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wVn-Xg-RpN"/>
                         <viewControllerLayoutGuide type="bottom" id="AUi-6C-ip7"/>
@@ -986,10 +1015,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5L-vX-pkf">
+                                <rect key="frame" x="0.0" y="44" width="600" height="507"/>
+                                <connections>
+                                    <segue destination="ITB-Px-wG6" kind="embed" id="Bxc-9Y-gaO"/>
+                                </connections>
+                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0IC-eZ-SXu">
                                 <rect key="frame" x="0.0" y="-46" width="600" height="687"/>
                                 <connections>
-                                    <segue destination="1ao-yz-fac" kind="embed" id="dLx-dm-fqu"/>
+                                    <segue destination="1ao-yz-fac" kind="embed" id="MaW-XK-e3o"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -997,7 +1032,11 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="0IC-eZ-SXu" secondAttribute="trailing" constant="-20" id="3mf-Os-QzB"/>
                             <constraint firstItem="0IC-eZ-SXu" firstAttribute="top" secondItem="wVn-Xg-RpN" secondAttribute="bottom" constant="-90" id="Bmn-f5-lr3"/>
+                            <constraint firstItem="e5L-vX-pkf" firstAttribute="top" secondItem="wVn-Xg-RpN" secondAttribute="bottom" id="EAI-zm-dk8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e5L-vX-pkf" secondAttribute="trailing" constant="-20" id="F6C-XB-R4j"/>
+                            <constraint firstItem="e5L-vX-pkf" firstAttribute="leading" secondItem="v35-Zj-nlC" secondAttribute="leadingMargin" constant="-20" id="O3n-5v-EYS"/>
                             <constraint firstItem="AUi-6C-ip7" firstAttribute="top" secondItem="0IC-eZ-SXu" secondAttribute="bottom" constant="-90" id="cXd-zr-Ebm"/>
+                            <constraint firstItem="AUi-6C-ip7" firstAttribute="top" secondItem="e5L-vX-pkf" secondAttribute="bottom" id="oPc-J3-n9E"/>
                             <constraint firstItem="0IC-eZ-SXu" firstAttribute="leading" secondItem="v35-Zj-nlC" secondAttribute="leadingMargin" constant="-20" id="qKE-or-uou"/>
                         </constraints>
                     </view>
@@ -1012,8 +1051,15 @@
                                 <segment title="Map"/>
                             </segments>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="indexChanged:" destination="1Ih-ld-G2x" eventType="valueChanged" id="yhD-P4-Lf8"/>
+                            </connections>
                         </segmentedControl>
                     </navigationItem>
+                    <connections>
+                        <outlet property="listView" destination="0IC-eZ-SXu" id="iNa-Te-fwc"/>
+                        <outlet property="mapView" destination="e5L-vX-pkf" id="31G-g6-70q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fM-Zh-Kl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
