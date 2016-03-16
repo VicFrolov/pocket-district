@@ -23,7 +23,6 @@
 		3860FFB41C9637010095A2BF /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA51C9637010095A2BF /* LoginPageViewController.swift */; };
 		3860FFB51C9637010095A2BF /* map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3860FFA61C9637010095A2BF /* map.storyboard */; };
 		3860FFB61C9637010095A2BF /* ParentSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA71C9637010095A2BF /* ParentSearchViewController.swift */; };
-		3860FFB71C9637010095A2BF /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3860FFA81C9637010095A2BF /* profile.storyboard */; };
 		3860FFB81C9637010095A2BF /* searchResultsDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA91C9637010095A2BF /* searchResultsDetailedViewController.swift */; };
 		3860FFB91C9637010095A2BF /* searchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFAA1C9637010095A2BF /* searchResultsTableViewCell.swift */; };
 		3860FFBA1C9637010095A2BF /* searchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFAB1C9637010095A2BF /* searchResultsTableViewController.swift */; };
@@ -53,7 +52,6 @@
 		3860FFA51C9637010095A2BF /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPageViewController.swift; path = ../LoginPageViewController.swift; sourceTree = "<group>"; };
 		3860FFA61C9637010095A2BF /* map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = map.storyboard; path = ../map.storyboard; sourceTree = "<group>"; };
 		3860FFA71C9637010095A2BF /* ParentSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParentSearchViewController.swift; path = ../ParentSearchViewController.swift; sourceTree = "<group>"; };
-		3860FFA81C9637010095A2BF /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = profile.storyboard; path = ../profile.storyboard; sourceTree = "<group>"; };
 		3860FFA91C9637010095A2BF /* searchResultsDetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = searchResultsDetailedViewController.swift; path = ../searchResultsDetailedViewController.swift; sourceTree = "<group>"; };
 		3860FFAA1C9637010095A2BF /* searchResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = searchResultsTableViewCell.swift; path = ../searchResultsTableViewCell.swift; sourceTree = "<group>"; };
 		3860FFAB1C9637010095A2BF /* searchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = searchResultsTableViewController.swift; path = ../searchResultsTableViewController.swift; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 				380182EA1C9949DD00885E91 /* Controller */,
 				3860FFA41C9637010095A2BF /* Info.plist */,
 				3860FFA61C9637010095A2BF /* map.storyboard */,
-				3860FFA81C9637010095A2BF /* profile.storyboard */,
 				3860FF9E1C9637000095A2BF /* PocketDistrict-Bridging-Header.h */,
 				3860FF9C1C9636BB0095A2BF /* Main.storyboard */,
 			);
@@ -237,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3860FFB71C9637010095A2BF /* profile.storyboard in Resources */,
 				3860FFB31C9637010095A2BF /* Info.plist in Resources */,
 				3860FFAF1C9637010095A2BF /* background.mp4 in Resources */,
 				3860FFB51C9637010095A2BF /* map.storyboard in Resources */,
