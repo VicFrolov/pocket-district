@@ -31,6 +31,7 @@
 		3860FFBE1C9637210095A2BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3860FFBD1C9637210095A2BF /* Default-568h@2x.png */; };
 		3860FFC01C9637CB0095A2BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3860FFBF1C9637CB0095A2BF /* MapKit.framework */; };
 		38D752BF1C98FB99007387AA /* resultsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D752BE1C98FB99007387AA /* resultsContainerViewController.swift */; };
+		38E369BE1C9A0CEB00424A40 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E369BD1C9A0CEB00424A40 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		3860FFBD1C9637210095A2BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3860FFBF1C9637CB0095A2BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		38D752BE1C98FB99007387AA /* resultsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultsContainerViewController.swift; sourceTree = "<group>"; };
+		38E369BD1C9A0CEB00424A40 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		43060C616BFDD82268783772 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCE6ACA4EB7BA80F4610199 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 		380182EA1C9949DD00885E91 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				38E369BD1C9A0CEB00424A40 /* ProfileViewController.swift */,
 				380182F11C994E8100885E91 /* CreateAccountViewController.swift */,
 				3860FFA21C9637010095A2BF /* CuratedViewController.swift */,
 				3860FFA31C9637010095A2BF /* CustomSearchViewController.swift */,
@@ -305,6 +308,7 @@
 				380182F41C9958F600885E91 /* LoginPromptViewController.swift in Sources */,
 				3860FFAE1C9637010095A2BF /* AppDelegate.swift in Sources */,
 				3860FFB21C9637010095A2BF /* CustomSearchViewController.swift in Sources */,
+				38E369BE1C9A0CEB00424A40 /* ProfileViewController.swift in Sources */,
 				3860FFB41C9637010095A2BF /* LoginPageViewController.swift in Sources */,
 				3860FFBC1C9637010095A2BF /* TypeOfActivityTableViewController.swift in Sources */,
 				3860FFB91C9637010095A2BF /* searchResultsTableViewCell.swift in Sources */,
