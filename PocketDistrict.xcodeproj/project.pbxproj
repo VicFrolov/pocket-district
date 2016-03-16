@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380182ED1C994A6500885E91 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380182EC1C994A6500885E91 /* Constants.swift */; };
 		3860FF921C9635FA0095A2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3860FF911C9635FA0095A2BF /* Assets.xcassets */; };
 		3860FF9D1C9636BB0095A2BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3860FF9C1C9636BB0095A2BF /* Main.storyboard */; };
 		3860FFAE1C9637010095A2BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FF9F1C9637010095A2BF /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		380182EC1C994A6500885E91 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3860FF851C9635FA0095A2BF /* PocketDistrict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketDistrict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3860FF911C9635FA0095A2BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3860FF9C1C9636BB0095A2BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		380182EA1C9949DD00885E91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3860FFA21C9637010095A2BF /* CuratedViewController.swift */,
+				3860FFA31C9637010095A2BF /* CustomSearchViewController.swift */,
+				3860FFA51C9637010095A2BF /* LoginPageViewController.swift */,
+				3860FFA71C9637010095A2BF /* ParentSearchViewController.swift */,
+				3860FFA91C9637010095A2BF /* searchResultsDetailedViewController.swift */,
+				3860FFAB1C9637010095A2BF /* searchResultsTableViewController.swift */,
+				3860FFAD1C9637010095A2BF /* TypeOfActivityTableViewController.swift */,
+				38D752BE1C98FB99007387AA /* resultsContainerViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		380182EB1C994A0300885E91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3860FFA11C9637010095A2BF /* CuratedSearchTableViewCell.swift */,
+				3860FFAA1C9637010095A2BF /* searchResultsTableViewCell.swift */,
+				3860FFAC1C9637010095A2BF /* TypeOfActivityTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		3860FF7C1C9635FA0095A2BF = {
 			isa = PBXGroup;
 			children = (
@@ -87,25 +114,17 @@
 		3860FF871C9635FA0095A2BF /* PocketDistrict */ = {
 			isa = PBXGroup;
 			children = (
+				380182EC1C994A6500885E91 /* Constants.swift */,
 				3860FF911C9635FA0095A2BF /* Assets.xcassets */,
 				3860FF9F1C9637010095A2BF /* AppDelegate.swift */,
 				3860FFA01C9637010095A2BF /* background.mp4 */,
-				3860FFA11C9637010095A2BF /* CuratedSearchTableViewCell.swift */,
-				3860FFA21C9637010095A2BF /* CuratedViewController.swift */,
-				3860FFA31C9637010095A2BF /* CustomSearchViewController.swift */,
+				380182EB1C994A0300885E91 /* View */,
+				380182EA1C9949DD00885E91 /* Controller */,
 				3860FFA41C9637010095A2BF /* Info.plist */,
-				3860FFA51C9637010095A2BF /* LoginPageViewController.swift */,
 				3860FFA61C9637010095A2BF /* map.storyboard */,
-				3860FFA71C9637010095A2BF /* ParentSearchViewController.swift */,
 				3860FFA81C9637010095A2BF /* profile.storyboard */,
-				3860FFA91C9637010095A2BF /* searchResultsDetailedViewController.swift */,
-				3860FFAA1C9637010095A2BF /* searchResultsTableViewCell.swift */,
-				3860FFAB1C9637010095A2BF /* searchResultsTableViewController.swift */,
-				3860FFAC1C9637010095A2BF /* TypeOfActivityTableViewCell.swift */,
-				3860FFAD1C9637010095A2BF /* TypeOfActivityTableViewController.swift */,
 				3860FF9E1C9637000095A2BF /* PocketDistrict-Bridging-Header.h */,
 				3860FF9C1C9636BB0095A2BF /* Main.storyboard */,
-				38D752BE1C98FB99007387AA /* resultsContainerViewController.swift */,
 			);
 			path = PocketDistrict;
 			sourceTree = "<group>";
@@ -198,6 +217,7 @@
 				3860FFB41C9637010095A2BF /* LoginPageViewController.swift in Sources */,
 				3860FFBC1C9637010095A2BF /* TypeOfActivityTableViewController.swift in Sources */,
 				3860FFB91C9637010095A2BF /* searchResultsTableViewCell.swift in Sources */,
+				380182ED1C994A6500885E91 /* Constants.swift in Sources */,
 				38D752BF1C98FB99007387AA /* resultsContainerViewController.swift in Sources */,
 				3860FFB81C9637010095A2BF /* searchResultsDetailedViewController.swift in Sources */,
 				3860FFB61C9637010095A2BF /* ParentSearchViewController.swift in Sources */,
