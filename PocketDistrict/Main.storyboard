@@ -195,7 +195,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYu-tZ-YJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="527" y="-901"/>
+            <point key="canvasLocation" x="501" y="-950"/>
         </scene>
         <!--Login-->
         <scene sceneID="spg-m1-ilL">
@@ -562,7 +562,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpI-ac-k6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2027" y="-944"/>
+            <point key="canvasLocation" x="2027" y="-950"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vJl-Ua-vCd">
@@ -866,7 +866,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynx-Ta-nai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2596" y="-348.5"/>
+            <point key="canvasLocation" x="2600" y="-236.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HGN-ha-F9b">
@@ -950,7 +950,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kwB-Re-4oj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3297" y="-348"/>
+            <point key="canvasLocation" x="3332" y="-236"/>
         </scene>
         <!--Tweet Results-->
         <scene sceneID="jwJ-1q-mRJ">
@@ -1003,12 +1003,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="6Zv-Nq-pl1">
                         <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="O2R-kH-yu3"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="40S-T3-HXc">
                             <rect key="frame" x="180" y="7" width="240" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
-                                <segment title="List View"/>
-                                <segment title="Map View"/>
+                                <segment title="List"/>
+                                <segment title="Map"/>
                             </segments>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </segmentedControl>
