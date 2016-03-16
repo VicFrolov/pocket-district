@@ -773,12 +773,12 @@
             <objects>
                 <tableViewController title="Tweet Results" id="1ao-yz-fac" customClass="searchResultsTableViewController" customModule="PocketDistrict" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="120" sectionHeaderHeight="18" sectionFooterHeight="18" id="f8g-Vu-P8w">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="687"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="547"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="120" id="HfN-vb-HdA" customClass="searchResultsTableViewCell" customModule="PocketDistrict" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="600" height="120"/>
+                                <rect key="frame" x="0.0" y="49.5" width="600" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HfN-vb-HdA" id="qD3-fu-rhl">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
@@ -1022,7 +1022,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0IC-eZ-SXu">
-                                <rect key="frame" x="0.0" y="-46" width="600" height="687"/>
+                                <rect key="frame" x="0.0" y="24" width="600" height="547"/>
                                 <connections>
                                     <segue destination="1ao-yz-fac" kind="embed" id="MaW-XK-e3o"/>
                                 </connections>
@@ -1031,11 +1031,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="0IC-eZ-SXu" secondAttribute="trailing" constant="-20" id="3mf-Os-QzB"/>
-                            <constraint firstItem="0IC-eZ-SXu" firstAttribute="top" secondItem="wVn-Xg-RpN" secondAttribute="bottom" constant="-90" id="Bmn-f5-lr3"/>
+                            <constraint firstItem="0IC-eZ-SXu" firstAttribute="top" secondItem="wVn-Xg-RpN" secondAttribute="bottom" constant="-20" id="Bmn-f5-lr3"/>
                             <constraint firstItem="e5L-vX-pkf" firstAttribute="top" secondItem="wVn-Xg-RpN" secondAttribute="bottom" id="EAI-zm-dk8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e5L-vX-pkf" secondAttribute="trailing" constant="-20" id="F6C-XB-R4j"/>
                             <constraint firstItem="e5L-vX-pkf" firstAttribute="leading" secondItem="v35-Zj-nlC" secondAttribute="leadingMargin" constant="-20" id="O3n-5v-EYS"/>
-                            <constraint firstItem="AUi-6C-ip7" firstAttribute="top" secondItem="0IC-eZ-SXu" secondAttribute="bottom" constant="-90" id="cXd-zr-Ebm"/>
+                            <constraint firstItem="AUi-6C-ip7" firstAttribute="top" secondItem="0IC-eZ-SXu" secondAttribute="bottom" constant="-20" id="cXd-zr-Ebm"/>
                             <constraint firstItem="AUi-6C-ip7" firstAttribute="top" secondItem="e5L-vX-pkf" secondAttribute="bottom" id="oPc-J3-n9E"/>
                             <constraint firstItem="0IC-eZ-SXu" firstAttribute="leading" secondItem="v35-Zj-nlC" secondAttribute="leadingMargin" constant="-20" id="qKE-or-uou"/>
                         </constraints>
