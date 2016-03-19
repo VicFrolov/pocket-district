@@ -67,6 +67,10 @@ class LoginPromptViewController: UIViewController {
         alert.addAction(action)
         presentViewController(alert, animated: true, completion: nil)
     }
+    
+    @IBAction func cancelCreateAccount(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: {})
+    }
 
     /*
     // MARK: - Navigation
