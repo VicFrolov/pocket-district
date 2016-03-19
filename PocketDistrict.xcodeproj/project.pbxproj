@@ -82,17 +82,17 @@
 		380182EA1C9949DD00885E91 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				38E369BD1C9A0CEB00424A40 /* ProfileViewController.swift */,
+				3860FFA51C9637010095A2BF /* LoginPageViewController.swift */,
 				381162181C9CE740007CD000 /* LoginPromptViewController.swift */,
 				380182F11C994E8100885E91 /* CreateAccountViewController.swift */,
 				3860FFA21C9637010095A2BF /* CuratedViewController.swift */,
+				3860FFAD1C9637010095A2BF /* TypeOfActivityTableViewController.swift */,
 				3860FFA31C9637010095A2BF /* CustomSearchViewController.swift */,
-				3860FFA51C9637010095A2BF /* LoginPageViewController.swift */,
 				3860FFA71C9637010095A2BF /* ParentSearchViewController.swift */,
 				3860FFA91C9637010095A2BF /* searchResultsDetailedViewController.swift */,
 				3860FFAB1C9637010095A2BF /* searchResultsTableViewController.swift */,
-				3860FFAD1C9637010095A2BF /* TypeOfActivityTableViewController.swift */,
 				38D752BE1C98FB99007387AA /* resultsContainerViewController.swift */,
+				38E369BD1C9A0CEB00424A40 /* ProfileViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
