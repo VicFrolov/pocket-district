@@ -638,7 +638,6 @@
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancelCreateAccount:" destination="1c0-w7-8cw" eventType="touchUpInside" id="BH1-kg-oyp"/>
-                                    <segue destination="1w1-cn-F1o" kind="unwind" unwindAction="unwindToMainMenu:" id="fuH-gH-k0e"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -666,14 +665,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWI-s1-Tae" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="1w1-cn-F1o" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-205" y="-1363"/>
         </scene>
         <!--LoginPrompt-->
         <scene sceneID="o7K-mf-fZQ">
             <objects>
-                <viewController title="LoginPrompt" id="qPH-b2-918" sceneMemberID="viewController">
+                <viewController title="LoginPrompt" id="qPH-b2-918" customClass="LoginPromptViewController" customModule="PocketDistrict" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p3F-bu-gu7"/>
                         <viewControllerLayoutGuide type="bottom" id="lQV-eM-Y0G"/>
@@ -701,7 +699,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b4l-in-3In">
                                         <rect key="frame" x="0.0" y="40" width="520" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -712,15 +710,12 @@
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="30"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <segue destination="cPy-0d-2rk" kind="show" id="W2Y-L5-hCo"/>
+                                            <action selector="tryLogin:" destination="qPH-b2-918" eventType="touchUpInside" id="EcE-se-XbB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muk-LQ-ySY">
                                         <rect key="frame" x="53" y="0.0" width="48" height="30"/>
                                         <state key="normal" title="Cancel"/>
-                                        <connections>
-                                            <segue destination="nMn-Gk-hF0" kind="unwind" unwindAction="unwindToMainMenu:" id="Tga-7h-NXA"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -729,16 +724,16 @@
                         <constraints>
                             <constraint firstItem="PPK-d5-yAa" firstAttribute="top" secondItem="tA2-xc-ft7" secondAttribute="bottom" constant="30" id="0T8-3G-M7J"/>
                             <constraint firstItem="PPK-d5-yAa" firstAttribute="leading" secondItem="MQl-Gy-sJo" secondAttribute="leadingMargin" constant="210" id="3xa-fE-N9M"/>
-                            <constraint firstItem="PPK-d5-yAa" firstAttribute="top" secondItem="tA2-xc-ft7" secondAttribute="bottom" constant="30" id="CEQ-OI-0oM"/>
+                            <constraint firstItem="PPK-d5-yAa" firstAttribute="top" secondItem="tA2-xc-ft7" secondAttribute="bottom" constant="30" id="6eD-es-dZI"/>
+                            <constraint firstItem="tA2-xc-ft7" firstAttribute="top" secondItem="p3F-bu-gu7" secondAttribute="bottom" constant="139" id="C7q-fz-c3R"/>
                             <constraint firstItem="Fol-T1-iPC" firstAttribute="centerX" secondItem="PPK-d5-yAa" secondAttribute="centerX" id="Dfs-ZJ-c3l"/>
-                            <constraint firstItem="tA2-xc-ft7" firstAttribute="leading" secondItem="MQl-Gy-sJo" secondAttribute="leadingMargin" constant="20" id="FVy-S3-1S9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PPK-d5-yAa" secondAttribute="trailing" constant="210" id="KN8-EU-NeC"/>
                             <constraint firstItem="Fol-T1-iPC" firstAttribute="top" secondItem="PPK-d5-yAa" secondAttribute="bottom" constant="8" symbolic="YES" id="MdD-fK-ku7"/>
+                            <constraint firstItem="tA2-xc-ft7" firstAttribute="leading" secondItem="MQl-Gy-sJo" secondAttribute="leadingMargin" constant="20" id="RGp-pT-ucU"/>
                             <constraint firstItem="Fol-T1-iPC" firstAttribute="centerX" secondItem="MQl-Gy-sJo" secondAttribute="centerX" id="TfX-fT-y3O"/>
                             <constraint firstItem="PPK-d5-yAa" firstAttribute="centerX" secondItem="MQl-Gy-sJo" secondAttribute="centerX" id="bzE-cj-HS6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tA2-xc-ft7" secondAttribute="trailing" constant="20" id="ohG-Gd-zJI"/>
+                            <constraint firstItem="tA2-xc-ft7" firstAttribute="centerX" secondItem="PPK-d5-yAa" secondAttribute="centerX" id="e6c-qI-Bby"/>
                             <constraint firstItem="Fol-T1-iPC" firstAttribute="top" secondItem="PPK-d5-yAa" secondAttribute="bottom" constant="8" id="pGW-Tm-cK8"/>
-                            <constraint firstItem="tA2-xc-ft7" firstAttribute="top" secondItem="p3F-bu-gu7" secondAttribute="bottom" constant="139" id="wg5-kg-gsi"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -750,11 +745,15 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="Sko-L0-T9m" id="2tE-dw-8CN"/>
+                        <outlet property="passwordField" destination="b4l-in-3In" id="4p5-Oh-eC6"/>
+                        <segue destination="cPy-0d-2rk" kind="show" identifier="CurrentlyLoggedIn" id="wbd-FO-WNU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jIg-wa-tM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="nMn-Gk-hF0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-205" y="-683"/>
+            <point key="canvasLocation" x="-193" y="-664"/>
         </scene>
         <!--Profile-->
         <scene sceneID="trU-AS-87F">
@@ -1212,7 +1211,7 @@
         <image name="logo" width="100" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="W2Y-L5-hCo"/>
+        <segue reference="wbd-FO-WNU"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.10497488967295501" green="0.32086058822678526" blue="0.51568509615384617" alpha="1" colorSpace="calibratedRGB"/>
 </document>
