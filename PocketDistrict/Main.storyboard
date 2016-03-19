@@ -321,7 +321,7 @@
         <!--Custom Search-->
         <scene sceneID="lqX-eE-0ww">
             <objects>
-                <tableViewController id="bg3-G9-5BP" sceneMemberID="viewController">
+                <tableViewController id="bg3-G9-5BP" customClass="CustomSearchTableViewController" customModule="PocketDistrict" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Iaj-FG-BhQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
