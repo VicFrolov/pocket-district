@@ -200,7 +200,7 @@
         <!--Login-->
         <scene sceneID="spg-m1-ilL">
             <objects>
-                <viewController title="Login" id="ek7-7U-Uhq" customClass="LoginPageViewController" customModule="PocketDistrict" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" title="Login" id="ek7-7U-Uhq" customClass="LoginPageViewController" customModule="PocketDistrict" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g58-UT-ceR"/>
                         <viewControllerLayoutGuide type="bottom" id="oev-5l-qVC"/>
@@ -771,6 +771,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqp-KC-n8p">
                                 <rect key="frame" x="272" y="481" width="57" height="30"/>
                                 <state key="normal" title="Sign out"/>
+                                <connections>
+                                    <action selector="logout:" destination="YjO-4X-t09" eventType="touchUpInside" id="drf-g2-vdU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1209,7 +1212,7 @@
         <image name="logo" width="100" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tY6-jx-Fjv"/>
+        <segue reference="W2Y-L5-hCo"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.10497488967295501" green="0.32086058822678526" blue="0.51568509615384617" alpha="1" colorSpace="calibratedRGB"/>
 </document>

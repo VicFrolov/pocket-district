@@ -73,9 +73,6 @@ class CreateAccountViewController: UIViewController {
     }
     
     func signupErrorAlert(title: String, message: String) {
-        
-        // Called upon signup error to let the user know signup didn't work.
-        
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
         alert.addAction(action)

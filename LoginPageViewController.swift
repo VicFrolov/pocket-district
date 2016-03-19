@@ -15,10 +15,6 @@ class LoginPageViewController: UIViewController {
     var avPlayerLayer: AVPlayerLayer!
     var paused: Bool = false
     
-    
-    //unwind segue
-    @IBAction func unwindToMainMenu(sender: UIStoryboardSegue) {
-    }
 
     override func viewDidLoad() {
         //hide the navbar
