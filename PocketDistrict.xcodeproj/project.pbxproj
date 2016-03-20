@@ -19,7 +19,6 @@
 		3860FFAF1C9637010095A2BF /* background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3860FFA01C9637010095A2BF /* background.mp4 */; };
 		3860FFB01C9637010095A2BF /* CuratedSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA11C9637010095A2BF /* CuratedSearchTableViewCell.swift */; };
 		3860FFB11C9637010095A2BF /* CuratedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA21C9637010095A2BF /* CuratedViewController.swift */; };
-		3860FFB31C9637010095A2BF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3860FFA41C9637010095A2BF /* Info.plist */; };
 		3860FFB41C9637010095A2BF /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA51C9637010095A2BF /* LoginPageViewController.swift */; };
 		3860FFB51C9637010095A2BF /* map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3860FFA61C9637010095A2BF /* map.storyboard */; };
 		3860FFB61C9637010095A2BF /* ParentSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA71C9637010095A2BF /* ParentSearchViewController.swift */; };
@@ -49,7 +48,6 @@
 		3860FFA01C9637010095A2BF /* background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = background.mp4; path = ../background.mp4; sourceTree = "<group>"; };
 		3860FFA11C9637010095A2BF /* CuratedSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CuratedSearchTableViewCell.swift; path = ../CuratedSearchTableViewCell.swift; sourceTree = "<group>"; };
 		3860FFA21C9637010095A2BF /* CuratedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CuratedViewController.swift; path = ../CuratedViewController.swift; sourceTree = "<group>"; };
-		3860FFA41C9637010095A2BF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		3860FFA51C9637010095A2BF /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPageViewController.swift; path = ../LoginPageViewController.swift; sourceTree = "<group>"; };
 		3860FFA61C9637010095A2BF /* map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = map.storyboard; path = ../map.storyboard; sourceTree = "<group>"; };
 		3860FFA71C9637010095A2BF /* ParentSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParentSearchViewController.swift; path = ../ParentSearchViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 				3860FFA01C9637010095A2BF /* background.mp4 */,
 				380182EB1C994A0300885E91 /* View */,
 				380182EA1C9949DD00885E91 /* Controller */,
-				3860FFA41C9637010095A2BF /* Info.plist */,
 				3860FFA61C9637010095A2BF /* map.storyboard */,
 				3860FF9E1C9637000095A2BF /* PocketDistrict-Bridging-Header.h */,
 				3860FF9C1C9636BB0095A2BF /* Main.storyboard */,
@@ -237,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3860FFB31C9637010095A2BF /* Info.plist in Resources */,
 				3860FFAF1C9637010095A2BF /* background.mp4 in Resources */,
 				3860FFB51C9637010095A2BF /* map.storyboard in Resources */,
 				3860FF9D1C9636BB0095A2BF /* Main.storyboard in Resources */,

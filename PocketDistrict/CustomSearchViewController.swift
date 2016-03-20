@@ -22,11 +22,14 @@ class CustomSearchTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     func test() {
+        let strUR:String = "http://www.tweetdistrict.com/tw?geoSearchWord=party"
+
         Alamofire.request(
-            .GET,
-            "https://httpbin.org/get", parameters: ["foo": "bar"])
+            .GET, strUR)
             .responseJSON { response in
+                debugPrint(response)
                 print(response.request)  // original URL request
                 print(response.response) // URL response
                 print(response.data)     // server data

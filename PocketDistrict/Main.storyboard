@@ -313,6 +313,9 @@
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="cPy-0d-2rk" kind="show" identifier="CurrentlyLoggedIn" id="Ceb-l6-xN5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYI-RO-OxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1231,7 +1234,7 @@
         <image name="logo" width="100" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tY6-jx-Fjv"/>
+        <segue reference="Ceb-l6-xN5"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.10497488967295501" green="0.32086058822678526" blue="0.51568509615384617" alpha="1" colorSpace="calibratedRGB"/>
 </document>

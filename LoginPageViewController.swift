@@ -49,6 +49,11 @@ class LoginPageViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         avPlayer.play()
         paused = false
+
+        //checking if user has already logged in
+        if NSUserDefaults.standardUserDefaults().valueForKey("uid") != nil && DataService.dataService.CURRENT_USER_REF.authData != nil {
+            self.performSegueWithIdentifier("CurrentlyLoggedIn", sender: nil)
+        }
     }
     
     override func viewDidDisappear(animated: Bool) {
