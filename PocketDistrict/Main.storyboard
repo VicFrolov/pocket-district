@@ -559,7 +559,7 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="createAccount:" destination="bg3-G9-5BP" eventType="touchUpInside" id="btd-0p-PZL"/>
+                                                        <action selector="search:" destination="bg3-G9-5BP" eventType="touchUpInside" id="bNb-Mj-4Fr"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -593,7 +593,10 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Custom Search" id="iMc-nX-OfJ"/>
                     <connections>
+                        <outlet property="searchLat" destination="c3h-yG-Ae4" id="ouH-Qj-Qaf"/>
+                        <outlet property="searchLon" destination="Mpf-0g-PIR" id="TYL-ck-wgh"/>
                         <outlet property="searchQ" destination="QIc-6G-8K5" id="Xa1-Ts-qOw"/>
+                        <outlet property="searchRadius" destination="n14-Zd-88p" id="1iN-v4-WWI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpI-ac-k6s" userLabel="First Responder" sceneMemberID="firstResponder"/>

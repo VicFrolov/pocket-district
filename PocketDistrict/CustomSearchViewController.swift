@@ -13,12 +13,9 @@ import SwiftyJSON
 class CustomSearchTableViewController: UITableViewController {
 
     @IBOutlet weak var searchQ: UITextField!
-
-    
-//    var userLat:Double
-//    var userLon:Double
-//    var Radius:Int
-
+    @IBOutlet weak var searchRadius: UITextField!
+    @IBOutlet weak var searchLat: UITextField!
+    @IBOutlet weak var searchLon: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,23 +29,41 @@ class CustomSearchTableViewController: UITableViewController {
     }
     
     
-    @IBAction func createAccount(sender: AnyObject) {
-        let q = searchQ.text!
-        
-        customSearch(q)
+    @IBAction func search(sender: AnyObject) {
+        let searchWord = searchQ.text
+        let r = searchRadius.text
+        let latitude = searchLat.text
+        let longitude = searchLon.text
+        customSearch(searchWord!, radius: r!, lat: latitude!, lon: longitude!)
     }
     
-    func customSearch(q:String, radius:String = "100") {
-        let fullSearch: String = "https://quiet-cove-5048.herokuapp.com/tw?geoSearchWord=\(q)&geoSearchWordLat=33.9605648&geoSearchWordLon=-118.41797910000001&geoSearchWordRad=\(radius)mi"
+    func customSearch(q:String, radius:String, lat:String, lon:String) {
+        let geoSearchWord = (searchQ.text! == "" ? q : "geoSearchWord=\(q)")
+
+        //if no geoSearchWord is provided, do not append an & for the search
+        var geoSearchLat = ""
+        if geoSearchWord != "" {
+            geoSearchLat = "&"
+        }
+        geoSearchLat += "geoSearchWordLat=" + (searchLat.text! == "" ? "33.960" : lat)
         
-        Alamofire.request(.GET, fullSearch).validate().responseJSON { response in
+        let geoSearchLon = "&geoSearchWordLon=" + (searchLon.text! == "" ? "-118.4179" : lon)
+        let geoSearchRadius = "&geoSearchWordRadius=" + (searchRadius.text! == "" ? "25" : radius)
+        let twitterURLRequest: String = "https://quiet-cove-5048.herokuapp.com/tw?\(geoSearchWord)\(geoSearchLat)\(geoSearchLon)\(geoSearchRadius)"
+
+        print(twitterURLRequest)
+        alamoRequest(twitterURLRequest)
+    }
+    
+    func alamoRequest(url: String) {
+        Alamofire.request(.GET, url).validate().responseJSON { response in
             switch response.result {
             case .Success:
                 if let value = response.result.value {
                     let json = JSON(value)
-                    let what = json["statuses"][1]["user"]["screen_name"].string
-                    print(what)
-                    print(json)
+                    if let what = json["statuses"][1]["user"]["screen_name"].string {
+                        
+                    }
                 }
             case .Failure(let error):
                 print(error)
