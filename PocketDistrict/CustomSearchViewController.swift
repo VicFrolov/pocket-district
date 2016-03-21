@@ -8,8 +8,16 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class CustomSearchTableViewController: UITableViewController {
+
+    @IBOutlet weak var searchQ: UITextField!
+
+    
+//    var userLat:Double
+//    var userLon:Double
+//    var Radius:Int
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,18 +31,18 @@ class CustomSearchTableViewController: UITableViewController {
     }
     
     
-    func test() {
-        let strUR:String = "http://www.tweetdistrict.com/tw?geoSearchWord=party"
+    @IBAction func createAccount(sender: AnyObject) {
+        let q = searchQ.text!
+        
+        customSearch(q)
+    }
+    
+    func customSearch(q:String) {
+        let strUR:String = "https://quiet-cove-5048.herokuapp.com/tw?q:\(q)"
 
         Alamofire.request(
             .GET, strUR)
             .responseJSON { response in
-                debugPrint(response)
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
-                
                 if let JSON = response.result.value {
                     print("JSON: \(JSON)")
                 }
@@ -43,7 +51,6 @@ class CustomSearchTableViewController: UITableViewController {
     
     override func viewDidAppear(animated:Bool) {
         super.viewDidAppear(animated)
-        test()
     }
     
 

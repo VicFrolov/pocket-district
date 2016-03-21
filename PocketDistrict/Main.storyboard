@@ -558,6 +558,9 @@
                                                     <state key="normal" title="Submit">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="createAccount:" destination="bg3-G9-5BP" eventType="touchUpInside" id="btd-0p-PZL"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -589,6 +592,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Custom Search" id="iMc-nX-OfJ"/>
+                    <connections>
+                        <outlet property="searchQ" destination="QIc-6G-8K5" id="Xa1-Ts-qOw"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpI-ac-k6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
