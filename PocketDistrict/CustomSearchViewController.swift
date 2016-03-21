@@ -19,6 +19,7 @@ class CustomSearchTableViewController: UITableViewController {
 //    var userLon:Double
 //    var Radius:Int
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,15 +38,21 @@ class CustomSearchTableViewController: UITableViewController {
         customSearch(q)
     }
     
-    func customSearch(q:String) {
-        let strUR:String = "https://quiet-cove-5048.herokuapp.com/tw?q:\(q)"
-
-        Alamofire.request(
-            .GET, strUR)
-            .responseJSON { response in
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
+    func customSearch(q:String, radius:String = "100") {
+        let fullSearch: String = "https://quiet-cove-5048.herokuapp.com/tw?geoSearchWord=\(q)&geoSearchWordLat=33.9605648&geoSearchWordLon=-118.41797910000001&geoSearchWordRad=\(radius)mi"
+        
+        Alamofire.request(.GET, fullSearch).validate().responseJSON { response in
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    let what = json["statuses"][1]["user"]["screen_name"].string
+                    print(what)
+                    print(json)
                 }
+            case .Failure(let error):
+                print(error)
+            }
         }
     }
     
