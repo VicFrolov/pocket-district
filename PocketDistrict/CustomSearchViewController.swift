@@ -70,18 +70,37 @@ class CustomSearchTableViewController: UITableViewController {
         }
     }
     
+    
+    
     func twitterResults(json:JSON, count:Int) {
         //jump to new tab to reveal results
         self.tabBarController!.selectedIndex = 2;
         
+        var categorizedArray = [[String: AnyObject]]()
+
         for (var i = 0; i < count; i++) {
-            if let screen_name = json["statuses"][i]["user"]["screen_name"].string {
-                print(screen_name)
+            var currentUsersInfo = [String:String]()
+            
+            if let screenname = json["statuses"][i]["user"]["screen_name"].string {
+                currentUsersInfo["screenname"] = screenname
             }
             
-            if let user_post = json["statuses"][i]["text"].string {
-                print(user_post)
+            if let userPost = json["statuses"][i]["text"].string {
+                currentUsersInfo["userPost"] = userPost
             }
+            
+            if let userPic = json["statuses"][i]["user"]["profile_image_url_https"].string {
+                currentUsersInfo["userPicUrl"] = userPic
+            }
+            if let timePosted = json["statuses"][i]["user"]["created_at"].string {
+                currentUsersInfo["timePosted"] = timePosted
+            }
+            categorizedArray.append(currentUsersInfo)
+        }
+        
+        for(var j = 0; j < categorizedArray.count; j++){
+            print(categorizedArray[j])
+            print(" ")
         }
     }
     
