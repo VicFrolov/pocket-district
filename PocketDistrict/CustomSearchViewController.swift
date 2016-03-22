@@ -45,11 +45,13 @@ class CustomSearchTableViewController: UITableViewController {
         if geoSearchWord != "" {
             geoSearchLat = "&"
         }
-        geoSearchLat += "geoSearchWordLat=" + (searchLat.text! == "" ? "33.960" : lat)
+        geoSearchLat += "geoSearchWordLat=" + (searchLat.text! == "" ? "33.9700" : lat)
         
-        let geoSearchLon = "&geoSearchWordLon=" + (searchLon.text! == "" ? "-118.4179" : lon)
-        let geoSearchRadius = "&geoSearchWordRadius=" + (searchRadius.text! == "" ? "25" : radius)
+        let geoSearchLon = "&geoSearchWordLon=" + (searchLon.text! == "" ? "-118.4180" : lon)
+        var geoSearchRadius = "&geoSearchWordRad=" + (searchRadius.text! == "" ? "25" : radius)
+        geoSearchRadius += "mi"
         let twitterURLRequest: String = "https://quiet-cove-5048.herokuapp.com/tw?\(geoSearchWord)\(geoSearchLat)\(geoSearchLon)\(geoSearchRadius)"
+        
 
         print(twitterURLRequest)
         alamoRequest(twitterURLRequest)
@@ -61,12 +63,23 @@ class CustomSearchTableViewController: UITableViewController {
             case .Success:
                 if let value = response.result.value {
                     let json = JSON(value)
-                    if let what = json["statuses"][1]["user"]["screen_name"].string {
-                        
-                    }
+                    let count = json["statuses"].count
+                    self.twitterResults(json, count:count)
                 }
             case .Failure(let error):
                 print(error)
+            }
+        }
+    }
+    
+    func twitterResults(json:JSON, count:Int) {
+        for (var i = 0; i < count; i++) {
+            if let screen_name = json["statuses"][i]["user"]["screen_name"].string {
+                print(screen_name)
+            }
+            
+            if let user_post = json["statuses"][i]["text"].string {
+                print(user_post)
             }
         }
     }
