@@ -51,10 +51,8 @@ class CustomSearchTableViewController: UITableViewController {
         var geoSearchRadius = "&geoSearchWordRad=" + (searchRadius.text! == "" ? "25" : radius)
         geoSearchRadius += "mi"
         let twitterURLRequest: String = "https://quiet-cove-5048.herokuapp.com/tw?\(geoSearchWord)\(geoSearchLat)\(geoSearchLon)\(geoSearchRadius)"
-        
-
-        print(twitterURLRequest)
         alamoRequest(twitterURLRequest)
+        
     }
     
     func alamoRequest(url: String) {
@@ -73,6 +71,9 @@ class CustomSearchTableViewController: UITableViewController {
     }
     
     func twitterResults(json:JSON, count:Int) {
+        //jump to new tab to reveal results
+        self.tabBarController!.selectedIndex = 2;
+        
         for (var i = 0; i < count; i++) {
             if let screen_name = json["statuses"][i]["user"]["screen_name"].string {
                 print(screen_name)
