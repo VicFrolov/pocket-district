@@ -17,7 +17,6 @@ class searchResultsTableViewController: UITableViewController {
     var tweetTime = ["1:03", "Unknown", "4:30", "1:03", "Unknown", "4:30"]
     
     
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath
         indexPath: NSIndexPath) -> UITableViewCell {
             let cellIdentifier = "Cell"
@@ -30,7 +29,6 @@ class searchResultsTableViewController: UITableViewController {
             cell.userImageLabel?.image = UIImage(named: "cafelore")
             return cell
     }
-    
     
     //MARKER: Swipe more and delete for searches
     
@@ -69,6 +67,7 @@ class searchResultsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

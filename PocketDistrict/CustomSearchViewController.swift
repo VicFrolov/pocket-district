@@ -17,6 +17,8 @@ class CustomSearchTableViewController: UITableViewController {
     @IBOutlet weak var searchLat: UITextField!
     @IBOutlet weak var searchLon: UITextField!
 
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,9 +44,11 @@ class CustomSearchTableViewController: UITableViewController {
 
         //if no geoSearchWord is provided, do not append an & for the search
         var geoSearchLat = ""
+        
         if geoSearchWord != "" {
             geoSearchLat = "&"
         }
+        
         geoSearchLat += "geoSearchWordLat=" + (searchLat.text! == "" ? "33.9700" : lat)
         
         let geoSearchLon = "&geoSearchWordLon=" + (searchLon.text! == "" ? "-118.4180" : lon)
@@ -75,10 +79,9 @@ class CustomSearchTableViewController: UITableViewController {
     func twitterResults(json:JSON, count:Int) {
         //jump to new tab to reveal results
         self.tabBarController!.selectedIndex = 2;
-        
         var categorizedArray = [[String: AnyObject]]()
 
-        for (var i = 0; i < count; i++) {
+        for (var i = 0; i < count; i += 1) {
             var currentUsersInfo = [String:String]()
             
             if let screenname = json["statuses"][i]["user"]["screen_name"].string {
@@ -98,11 +101,12 @@ class CustomSearchTableViewController: UITableViewController {
             categorizedArray.append(currentUsersInfo)
         }
         
-        for(var j = 0; j < categorizedArray.count; j++){
+        for (var j = 0; j < categorizedArray.count; j += 1) {
             print(categorizedArray[j])
             print(" ")
         }
     }
+
     
     override func viewDidAppear(animated:Bool) {
         super.viewDidAppear(animated)

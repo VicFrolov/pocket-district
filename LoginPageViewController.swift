@@ -35,7 +35,7 @@ class LoginPageViewController: UIViewController {
         view.layer.insertSublayer(avPlayerLayer, atIndex: 0)
         
         NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: "playerItemDidReachEnd:",
+            selector: #selector(LoginPageViewController.playerItemDidReachEnd(_:)),
             name: AVPlayerItemDidPlayToEndTimeNotification,
             object: avPlayer.currentItem)
         
