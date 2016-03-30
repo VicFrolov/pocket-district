@@ -29,10 +29,6 @@ class resultsContainerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let tbc = self.tabBarController as? CustomTabBarController {
-            print("blabla")
-        }
     }
 
 

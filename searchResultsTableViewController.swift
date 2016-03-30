@@ -17,66 +17,113 @@ class searchResultsTableViewController: UITableViewController {
     var tweetTime = ["1:03", "Unknown", "4:30", "1:03", "Unknown", "4:30"]
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath
-        indexPath: NSIndexPath) -> UITableViewCell {
-            let cellIdentifier = "Cell"
-            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! searchResultsTableViewCell
-            
-            // Configure the cell...
-            cell.usernameLabel?.text = username[indexPath.row]
-            cell.tweetLabel?.text = tweetContent[indexPath.row]
-            cell.tweetTimeLabel?.text = tweetTime[indexPath.row]
-            cell.userImageLabel?.image = UIImage(named: "cafelore")
-            return cell
-    }
+//    override func tableView(tableView: UITableView, cellForRowAtIndexPath
+//        indexPath: NSIndexPath) -> UITableViewCell {
+//            let cellIdentifier = "Cell"
+//            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! searchResultsTableViewCell
+//            
+//            // Configure the cell...
+//            //cell.usernameLabel?.text = username[indexPath.row]
+//
+//            if let tbc = self.tabBarController as? CustomTabBarController {
+//                if tbc.loadResults {
+////                    tbc.loadResults = false
+//                    
+//                    cell.usernameLabel?.text = tbc.categorizedArray[indexPath.row]["screenname"] as! String?
+//                    cell.tweetLabel?.text = tbc.categorizedArray[indexPath.row]["userPost"] as! String?
+//
+//                
+//                }
+//                
+//            }
+//
+//        
+////            cell.tweetTimeLabel?.text = tweetTime[indexPath.row]
+////            cell.userImageLabel?.image = UIImage(named: "cafelore")
+//            return cell
+//    }
+//    
+//    //MARKER: Swipe more and delete for searches
+//    
+//    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+//            // Social Sharing Button
+//        let shareAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Share", handler: {
+//                (action, indexPath) -> Void in let defaultText = "Check this out: \(self.username[indexPath.row]) writes \(self.tweetContent[indexPath.row])"
+//                    let activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
+//                    self.presentViewController(activityController, animated: true, completion: nil)
+//        })
+//        // Delete button
+//        let deleteAction = UITableViewRowAction(style:
+//            UITableViewRowActionStyle.Default, title: "Delete",handler: { (action,
+//            indexPath) -> Void in
+//            // Delete the row from the data source
+//            self.username.removeAtIndex(indexPath.row)
+//            self.userImage.removeAtIndex(indexPath.row)
+////            self.tweetContent.removeAtIndex(indexPath.row)
+////            self.tweetTime.removeAtIndex(indexPath.row)
+//            
+//            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Left)
+//        })
     
-    //MARKER: Swipe more and delete for searches
-    
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
-            // Social Sharing Button
-        let shareAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Share", handler: {
-                (action, indexPath) -> Void in let defaultText = "Check this out: \(self.username[indexPath.row]) writes \(self.tweetContent[indexPath.row])"
-                    let activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
-                    self.presentViewController(activityController, animated: true, completion: nil)
-        })
-        // Delete button
-        let deleteAction = UITableViewRowAction(style:
-            UITableViewRowActionStyle.Default, title: "Delete",handler: { (action,
-            indexPath) -> Void in
-            // Delete the row from the data source
-            self.username.removeAtIndex(indexPath.row)
-            self.userImage.removeAtIndex(indexPath.row)
-            self.tweetContent.removeAtIndex(indexPath.row)
-            self.tweetTime.removeAtIndex(indexPath.row)
-            
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Left)
-        })
         
-        
-        shareAction.backgroundColor = UIColor(red: 28.0/255.0, green: 165.0/255.0,
-            blue: 253.0/255.0, alpha: 1.0)
-        
-        return [deleteAction, shareAction]
-    }
+//        shareAction.backgroundColor = UIColor(red: 28.0/255.0, green: 165.0/255.0,
+//            blue: 253.0/255.0, alpha: 1.0)
+//        
+//        return [deleteAction, shareAction]
+//    }
 
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) ->
+        Int {
+            if let tbc = self.tabBarController as? CustomTabBarController {
+                print(tbc.categorizedArray.count)
+                print("lol")
+                return tbc.categorizedArray.count
+            } else {
+                return 0
+            }
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:
+        NSIndexPath) -> UITableViewCell {
+        let cellIdentifier = "Cell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! searchResultsTableViewCell
+
+        // Configure the cell...
+        if let tbc = self.tabBarController as? CustomTabBarController {
+            cell.usernameLabel?.text = tbc.categorizedArray[indexPath.row]["screenname"] as! String?
+            cell.tweetLabel?.text = tbc.categorizedArray[indexPath.row]["userPost"] as! String?
+            cell.tweetTimeLabel?.text = tbc.categorizedArray[indexPath.row]["timePosted"] as! String?
+
+
+        }
+        return cell
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true);
-        
+        super.viewDidAppear(true)
+        //reload table data
+        self.tableView.reloadData()
+        displayResults()
+    }
+    
+    func displayResults() {
         if let tbc = self.tabBarController as? CustomTabBarController {
-            
             if tbc.loadResults {
-                print("lol")
                 tbc.loadResults = false
-            } else {
-                print("no lol")
-            }
-        
-        }
+                
+                for dictionary in tbc.categorizedArray {
+                   // print(dictionary["userPost"]!)
+                }
 
+            }
+            
+        }
     }
     
 
@@ -92,64 +139,5 @@ class searchResultsTableViewController: UITableViewController {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return username.count
-    }
-
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

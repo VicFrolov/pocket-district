@@ -85,8 +85,7 @@ class CustomSearchTableViewController: UITableViewController {
             //load over and over, and only on a search.
             tbc.loadResults = true
             
-            for (var i = 0; i < count; i += 1) {
-            
+            for i in (0 ..< count) {
                 var currentUsersInfo = [String:String]()
             
                 if let screenname = json["statuses"][i]["user"]["screen_name"].string {
@@ -107,8 +106,8 @@ class CustomSearchTableViewController: UITableViewController {
                 tbc.categorizedArray.append(currentUsersInfo)
             }
         
-            for (var j = 0; j < tbc.categorizedArray.count; j += 1) {
-                print(tbc.categorizedArray[j])
+            for i in (0 ..< tbc.categorizedArray.count) {
+                print(tbc.categorizedArray[i])
                 print(" ")
             }
         }
@@ -118,16 +117,4 @@ class CustomSearchTableViewController: UITableViewController {
     override func viewDidAppear(animated:Bool) {
         super.viewDidAppear(animated)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
