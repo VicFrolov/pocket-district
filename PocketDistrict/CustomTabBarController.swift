@@ -1,27 +1,27 @@
 //
-//  searchResultsDetailedViewController.swift
-//  Shoes
+//  CustomTabBarController.swift
+//  PocketDistrict
 //
-//  Created by Victor Frolov on 1/2/16.
+//  Created by Victor Frolov on 3/29/16.
 //  Copyright © 2016 Victor Frolov. All rights reserved.
 //
 
 import UIKit
 
-class searchResultsDetailedViewController: UIViewController {
+class CustomTabBarController: UITabBarController {
     
-    @IBOutlet var userPic:UIImageView!
-    var restaurantImage = "nightlife"
+    var categorizedArray = [[String: AnyObject]]()
+    var loadResults = false;
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        userPic.image = UIImage(named: restaurantImage)    
+
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    
         // Dispose of any resources that can be recreated.
     }
     

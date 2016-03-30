@@ -194,7 +194,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="CxA-xZ-8QB">
             <objects>
-                <tabBarController title="Tab Bar Controller" automaticallyAdjustsScrollViewInsets="NO" id="cPy-0d-2rk" sceneMemberID="viewController">
+                <tabBarController title="Tab Bar Controller" automaticallyAdjustsScrollViewInsets="NO" id="cPy-0d-2rk" customClass="CustomTabBarController" customModule="PocketDistrict" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="fill" id="NmX-KF-Vqq">
                         <autoresizingMask key="autoresizingMask"/>

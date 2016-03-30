@@ -61,11 +61,22 @@ class searchResultsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true);
+        
+        if let tbc = self.tabBarController as? CustomTabBarController {
+            
+            if tbc.loadResults {
+                print("lol")
+                tbc.loadResults = false
+            } else {
+                print("no lol")
+            }
+        
+        }
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
 

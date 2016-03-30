@@ -21,8 +21,6 @@ class CustomSearchTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,31 +77,40 @@ class CustomSearchTableViewController: UITableViewController {
     func twitterResults(json:JSON, count:Int) {
         //jump to new tab to reveal results
         self.tabBarController!.selectedIndex = 2;
-        var categorizedArray = [[String: AnyObject]]()
-
-        for (var i = 0; i < count; i += 1) {
-            var currentUsersInfo = [String:String]()
-            
-            if let screenname = json["statuses"][i]["user"]["screen_name"].string {
-                currentUsersInfo["screenname"] = screenname
-            }
-            
-            if let userPost = json["statuses"][i]["text"].string {
-                currentUsersInfo["userPost"] = userPost
-            }
-            
-            if let userPic = json["statuses"][i]["user"]["profile_image_url_https"].string {
-                currentUsersInfo["userPicUrl"] = userPic
-            }
-            if let timePosted = json["statuses"][i]["user"]["created_at"].string {
-                currentUsersInfo["timePosted"] = timePosted
-            }
-            categorizedArray.append(currentUsersInfo)
-        }
         
-        for (var j = 0; j < categorizedArray.count; j += 1) {
-            print(categorizedArray[j])
-            print(" ")
+        
+        //Ensure that CustomTabBarController exists
+        if let tbc = self.tabBarController as? CustomTabBarController {
+            //set loadResults to true so that everytime that tab bar appears it doesn't 
+            //load over and over, and only on a search.
+            tbc.loadResults = true
+            
+            for (var i = 0; i < count; i += 1) {
+            
+                var currentUsersInfo = [String:String]()
+            
+                if let screenname = json["statuses"][i]["user"]["screen_name"].string {
+                    currentUsersInfo["screenname"] = screenname
+                }
+            
+                if let userPost = json["statuses"][i]["text"].string {
+                    currentUsersInfo["userPost"] = userPost
+                }
+            
+                if let userPic = json["statuses"][i]["user"]["profile_image_url_https"].string {
+                    currentUsersInfo["userPicUrl"] = userPic
+                }
+                if let timePosted = json["statuses"][i]["user"]["created_at"].string {
+                    currentUsersInfo["timePosted"] = timePosted
+                }
+                
+                tbc.categorizedArray.append(currentUsersInfo)
+            }
+        
+            for (var j = 0; j < tbc.categorizedArray.count; j += 1) {
+                print(tbc.categorizedArray[j])
+                print(" ")
+            }
         }
     }
 
