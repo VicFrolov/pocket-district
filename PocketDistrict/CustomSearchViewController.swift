@@ -52,8 +52,10 @@ class CustomSearchTableViewController: UITableViewController {
         let geoSearchLon = "&geoSearchWordLon=" + (searchLon.text! == "" ? "-118.4180" : lon)
         var geoSearchRadius = "&geoSearchWordRad=" + (searchRadius.text! == "" ? "25" : radius)
         geoSearchRadius += "mi"
-        let twitterURLRequest: String = "https://quiet-cove-5048.herokuapp.com/tw?\(geoSearchWord)\(geoSearchLat)\(geoSearchLon)\(geoSearchRadius)"
-        alamoRequest(twitterURLRequest)
+        let searchWords: String = "https://quiet-cove-5048.herokuapp.com/tw?\(geoSearchWord)\(geoSearchLat)\(geoSearchLon)\(geoSearchRadius)"
+        
+        let twitterUrlRequest: String = searchWords.stringByAddingPercentEncodingWithAllowedCharacters( NSCharacterSet.URLQueryAllowedCharacterSet())!
+        alamoRequest(twitterUrlRequest)
         
     }
     

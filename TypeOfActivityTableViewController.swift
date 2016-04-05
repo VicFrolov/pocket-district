@@ -19,7 +19,7 @@ class TypeOfActivityTableViewController: UITableViewController {
     
     var slogan = ["Hit the town", "Best grub in town", "find events", "get a job", "because saving money rocks"]
     
-    var searchQuery = ["happy%20hour", "lunch", "show", "hiring%20OR%20job", "sales%20OR%20discount"]
+    var searchQuery = ["\"happy hour\"", "lunch", "show", "hiring%20OR%20job", "sales%20OR%20discount"]
 
     
     
@@ -61,8 +61,10 @@ class TypeOfActivityTableViewController: UITableViewController {
         let geoSearchLat = "&geoSearchWordLat=" + (lat == "" ? "33.9700" : lat)
         let geoSearchLon = "&geoSearchWordLon=" + (lon == "" ? "-118.4180" : lon)
         let geoSearchRadius = "&geoSearchWordRad=5mi"
-        let twitterURLRequest: String = "https://quiet-cove-5048.herokuapp.com/tw?\(geoSearchWord)\(geoSearchLat)\(geoSearchLon)\(geoSearchRadius)"
-        alamoRequest(twitterURLRequest)
+        let searchWords: String = "https://quiet-cove-5048.herokuapp.com/tw?\(geoSearchWord)\(geoSearchLat)\(geoSearchLon)\(geoSearchRadius)"
+        
+        let twitterUrlRequest: String = searchWords.stringByAddingPercentEncodingWithAllowedCharacters( NSCharacterSet.URLQueryAllowedCharacterSet())!
+        alamoRequest(twitterUrlRequest)
     }
     
     func alamoRequest(url: String) {
