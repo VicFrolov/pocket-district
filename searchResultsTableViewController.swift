@@ -94,8 +94,6 @@ class searchResultsTableViewController: UITableViewController {
             cell.usernameLabel?.text = tbc.categorizedArray[indexPath.row]["screenname"] as! String?
             cell.tweetLabel?.text = tbc.categorizedArray[indexPath.row]["userPost"] as! String?
             cell.tweetTimeLabel?.text = tbc.categorizedArray[indexPath.row]["timePosted"] as! String?
-
-
         }
         return cell
     }
@@ -109,21 +107,6 @@ class searchResultsTableViewController: UITableViewController {
         super.viewDidAppear(true)
         //reload table data
         self.tableView.reloadData()
-        displayResults()
-    }
-    
-    func displayResults() {
-        if let tbc = self.tabBarController as? CustomTabBarController {
-            if tbc.loadResults {
-                tbc.loadResults = false
-                
-                for dictionary in tbc.categorizedArray {
-                   // print(dictionary["userPost"]!)
-                }
-
-            }
-            
-        }
     }
     
 

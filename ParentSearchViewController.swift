@@ -20,6 +20,21 @@ class ParentSearchViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var curatedView: UIView!
+    @IBOutlet weak var quickView: UIView!
+    
+    @IBAction func indexChanged(sender: AnyObject) {
+        switch sender.selectedSegmentIndex {
+        case 0 :
+            curatedView.hidden = false
+            quickView.hidden = true
+        case 1:
+            curatedView.hidden = true
+            quickView.hidden = false
+        default:
+            break
+        }
+    }
 
     /*
     // MARK: - Navigation

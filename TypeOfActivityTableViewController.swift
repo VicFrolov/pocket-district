@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class TypeOfActivityTableViewController: UITableViewController {
     
@@ -16,6 +18,9 @@ class TypeOfActivityTableViewController: UITableViewController {
     var activityPic = ["nightlife", "eatsPic", "dayPic", "jobsPic", "salesPic"]
     
     var slogan = ["Hit the town", "Best grub in town", "find events", "get a job", "because saving money rocks"]
+    
+    var searchQuery = ["happy%20hour", "lunch", "show", "hiring%20OR%20job", "sales%20OR%20discount"]
+
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -27,27 +32,91 @@ class TypeOfActivityTableViewController: UITableViewController {
             return cell
     }
     
-
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath
+        indexPath: NSIndexPath) {
+        quickSearch(indexPath.row, lat:"", lon:"")
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // remove spacing between table and navbar
         self.automaticallyAdjustsScrollViewInsets = false
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-    
+
     
     //forces the navbar to appear, even if it disappeared in previous controller
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.hidesBarsOnSwipe = true
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+
+    func quickSearch(indexPath: Int, lat: String, lon: String) {
+        let geoSearchWord = "geoSearchWord=\(searchQuery[indexPath])"
+        let geoSearchLat = "&geoSearchWordLat=" + (lat == "" ? "33.9700" : lat)
+        let geoSearchLon = "&geoSearchWordLon=" + (lon == "" ? "-118.4180" : lon)
+        let geoSearchRadius = "&geoSearchWordRad=5mi"
+        let twitterURLRequest: String = "https://quiet-cove-5048.herokuapp.com/tw?\(geoSearchWord)\(geoSearchLat)\(geoSearchLon)\(geoSearchRadius)"
+        alamoRequest(twitterURLRequest)
+    }
+    
+    func alamoRequest(url: String) {
+        Alamofire.request(.GET, url).validate().responseJSON { response in
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    let count = json["statuses"].count
+                    self.twitterResults(json, count:count)
+                }
+            case .Failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func twitterResults(json:JSON, count:Int) {
+        //jump to new tab to reveal results
+        self.tabBarController!.selectedIndex = 2;
+        
+        
+        //Ensure that CustomTabBarController exists
+        if let tbc = self.tabBarController as? CustomTabBarController {
+            //set loadResults to true so that everytime that tab bar appears it doesn't
+            //load over and over, and only on a search.
+            tbc.loadResults = true
+            
+            for i in (0 ..< count) {
+                var currentUsersInfo = [String:String]()
+                
+                if let screenname = json["statuses"][i]["user"]["screen_name"].string {
+                    currentUsersInfo["screenname"] = screenname
+                }
+                
+                if let userPost = json["statuses"][i]["text"].string {
+                    currentUsersInfo["userPost"] = userPost
+                }
+                
+                if let userPic = json["statuses"][i]["user"]["profile_image_url_https"].string {
+                    currentUsersInfo["userPicUrl"] = userPic
+                }
+                if let timePosted = json["statuses"][i]["user"]["created_at"].string {
+                    currentUsersInfo["timePosted"] = timePosted
+                }
+                
+                tbc.categorizedArray.append(currentUsersInfo)
+            }
+            
+            for i in (0 ..< tbc.categorizedArray.count) {
+                print(tbc.categorizedArray[i])
+                print(" ")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,68 +127,11 @@ class TypeOfActivityTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return activityNames.count
     }
-
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
