@@ -94,7 +94,7 @@ class TypeOfActivityTableViewController: UITableViewController {
             tbc.loadResults = true
             
             for i in (0 ..< count) {
-                var currentUsersInfo = [String:String]()
+                var currentUsersInfo = [String:AnyObject]()
                 
                 if let screenname = json["statuses"][i]["user"]["screen_name"].string {
                     currentUsersInfo["screenname"] = screenname
@@ -109,6 +109,12 @@ class TypeOfActivityTableViewController: UITableViewController {
                 }
                 if let timePosted = json["statuses"][i]["user"]["created_at"].string {
                     currentUsersInfo["timePosted"] = timePosted
+                }
+                if let geoLat = json["statuses"][i]["geo"]["coordinates"][0].float {
+                    currentUsersInfo["geoLat"] = geoLat
+                }
+                if let geoLon = json["statuses"][i]["geo"]["coordinates"][1].float {
+                    currentUsersInfo["geoLon"] = geoLon
                 }
                 
                 tbc.categorizedArray.append(currentUsersInfo)

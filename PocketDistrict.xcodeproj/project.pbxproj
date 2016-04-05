@@ -11,6 +11,8 @@
 		380182ED1C994A6500885E91 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380182EC1C994A6500885E91 /* Constants.swift */; };
 		380182EF1C994D5100885E91 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380182EE1C994D5100885E91 /* DataService.swift */; };
 		380182F21C994E8100885E91 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380182F11C994E8100885E91 /* CreateAccountViewController.swift */; };
+		3808BDD51CB3A0050033F6B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3808BDD41CB3A0050033F6B0 /* Assets.xcassets */; };
+		3808BDD71CB3A05F0033F6B0 /* SearchResultsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808BDD61CB3A05F0033F6B0 /* SearchResultsMapViewController.swift */; };
 		381162191C9CE740007CD000 /* LoginPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381162181C9CE740007CD000 /* LoginPromptViewController.swift */; };
 		381524DB1C9D29C600A16144 /* CustomSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381524DA1C9D29C600A16144 /* CustomSearchViewController.swift */; };
 		385C99C81CAB6D2600AA1891 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C99C71CAB6D2600AA1891 /* CustomTabBarController.swift */; };
@@ -37,6 +39,8 @@
 		380182EC1C994A6500885E91 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		380182EE1C994D5100885E91 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = ../DataService.swift; sourceTree = "<group>"; };
 		380182F11C994E8100885E91 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		3808BDD41CB3A0050033F6B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3808BDD61CB3A05F0033F6B0 /* SearchResultsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsMapViewController.swift; sourceTree = "<group>"; };
 		381162181C9CE740007CD000 /* LoginPromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPromptViewController.swift; sourceTree = "<group>"; };
 		381524DA1C9D29C600A16144 /* CustomSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchViewController.swift; sourceTree = "<group>"; };
 		385C99C71CAB6D2600AA1891 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 				38E369BD1C9A0CEB00424A40 /* ProfileViewController.swift */,
 				381524DA1C9D29C600A16144 /* CustomSearchViewController.swift */,
 				385C99C71CAB6D2600AA1891 /* CustomTabBarController.swift */,
+				3808BDD61CB3A05F0033F6B0 /* SearchResultsMapViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				380182EA1C9949DD00885E91 /* Controller */,
 				3860FF9E1C9637000095A2BF /* PocketDistrict-Bridging-Header.h */,
 				3860FF9C1C9636BB0095A2BF /* Main.storyboard */,
+				3808BDD41CB3A0050033F6B0 /* Assets.xcassets */,
 			);
 			path = PocketDistrict;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 			files = (
 				3860FFAF1C9637010095A2BF /* background.mp4 in Resources */,
 				3860FF9D1C9636BB0095A2BF /* Main.storyboard in Resources */,
+				3808BDD51CB3A0050033F6B0 /* Assets.xcassets in Resources */,
 				3860FFBE1C9637210095A2BF /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +309,7 @@
 				38E369BE1C9A0CEB00424A40 /* ProfileViewController.swift in Sources */,
 				385C99C81CAB6D2600AA1891 /* CustomTabBarController.swift in Sources */,
 				3860FFB41C9637010095A2BF /* LoginPageViewController.swift in Sources */,
+				3808BDD71CB3A05F0033F6B0 /* SearchResultsMapViewController.swift in Sources */,
 				3860FFBC1C9637010095A2BF /* TypeOfActivityTableViewController.swift in Sources */,
 				3860FFB91C9637010095A2BF /* searchResultsTableViewCell.swift in Sources */,
 				380182ED1C994A6500885E91 /* Constants.swift in Sources */,

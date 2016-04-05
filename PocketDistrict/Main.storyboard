@@ -871,10 +871,10 @@
             </objects>
             <point key="canvasLocation" x="2592" y="-967.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Results Map View Controller-->
         <scene sceneID="Yce-me-qJi">
             <objects>
-                <viewController id="ITB-Px-wG6" sceneMemberID="viewController">
+                <viewController id="ITB-Px-wG6" customClass="SearchResultsMapViewController" customModule="PocketDistrict" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VMy-9Y-WJn"/>
                         <viewControllerLayoutGuide type="bottom" id="U3y-YE-Hy0"/>
@@ -895,6 +895,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="BQb-2I-clM" secondAttribute="trailing" constant="-20" id="vx0-wh-YOf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="BQb-2I-clM" id="4rB-cg-ocb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TA-7Z-vth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1200,7 +1203,7 @@
                                             <constraint firstAttribute="height" constant="30" id="ypG-LS-Jx0"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyV-Rh-aVh">
                                         <rect key="frame" x="13" y="80" width="245" height="30"/>
@@ -1255,7 +1258,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="eyV-Rh-aVh" secondAttribute="centerX" id="0Z7-s6-eS6"/>
                                     <constraint firstAttribute="centerX" secondItem="Egp-ev-zKZ" secondAttribute="centerX" id="2i2-6R-hVA"/>
@@ -1352,7 +1355,7 @@
                                             <constraint firstAttribute="width" constant="245" id="7g1-tU-xKl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r39-u8-jTv">
                                         <rect key="frame" x="13" y="134" width="245" height="30"/>
@@ -1378,7 +1381,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="1L4-Wd-jIz"/>
                                     <constraint firstItem="0tf-40-nhz" firstAttribute="centerX" secondItem="r39-u8-jTv" secondAttribute="centerX" id="1aX-7O-0bl"/>
@@ -1396,7 +1399,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqV-Qo-bMF">
                                 <rect key="frame" x="554" y="8" width="30" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="dTq-WL-YEf"/>
                                     <constraint firstAttribute="width" constant="30" id="yw2-Nq-jzM"/>
@@ -1454,7 +1457,7 @@
         <image name="logo-1" width="188" height="165"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ceb-l6-xN5"/>
+        <segue reference="OQZ-qu-t4n"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.10497488967295501" green="0.32086058822678526" blue="0.51568509615384617" alpha="1" colorSpace="calibratedRGB"/>
 </document>
