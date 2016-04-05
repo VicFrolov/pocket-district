@@ -15,6 +15,7 @@
 		3808BDD71CB3A05F0033F6B0 /* SearchResultsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808BDD61CB3A05F0033F6B0 /* SearchResultsMapViewController.swift */; };
 		381162191C9CE740007CD000 /* LoginPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381162181C9CE740007CD000 /* LoginPromptViewController.swift */; };
 		381524DB1C9D29C600A16144 /* CustomSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381524DA1C9D29C600A16144 /* CustomSearchViewController.swift */; };
+		3828086F1CB46ED800529672 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828086E1CB46ED800529672 /* ProfileTableViewController.swift */; };
 		385C99C81CAB6D2600AA1891 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C99C71CAB6D2600AA1891 /* CustomTabBarController.swift */; };
 		3860FF9D1C9636BB0095A2BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3860FF9C1C9636BB0095A2BF /* Main.storyboard */; };
 		3860FFAE1C9637010095A2BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FF9F1C9637010095A2BF /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 		3808BDD61CB3A05F0033F6B0 /* SearchResultsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsMapViewController.swift; sourceTree = "<group>"; };
 		381162181C9CE740007CD000 /* LoginPromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPromptViewController.swift; sourceTree = "<group>"; };
 		381524DA1C9D29C600A16144 /* CustomSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchViewController.swift; sourceTree = "<group>"; };
+		3828086E1CB46ED800529672 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		385C99C71CAB6D2600AA1891 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		3860FF851C9635FA0095A2BF /* PocketDistrict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketDistrict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3860FF9C1C9636BB0095A2BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				381524DA1C9D29C600A16144 /* CustomSearchViewController.swift */,
 				385C99C71CAB6D2600AA1891 /* CustomTabBarController.swift */,
 				3808BDD61CB3A05F0033F6B0 /* SearchResultsMapViewController.swift */,
+				3828086E1CB46ED800529672 /* ProfileTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				381162191C9CE740007CD000 /* LoginPromptViewController.swift in Sources */,
 				381524DB1C9D29C600A16144 /* CustomSearchViewController.swift in Sources */,
 				3860FFBB1C9637010095A2BF /* TypeOfActivityTableViewCell.swift in Sources */,
+				3828086F1CB46ED800529672 /* ProfileTableViewController.swift in Sources */,
 				3860FFAE1C9637010095A2BF /* AppDelegate.swift in Sources */,
 				38E369BE1C9A0CEB00424A40 /* ProfileViewController.swift in Sources */,
 				385C99C81CAB6D2600AA1891 /* CustomTabBarController.swift in Sources */,
