@@ -285,7 +285,7 @@
                                     <constraint firstAttribute="height" constant="100" id="C9D-zk-WBX"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="XQc-AN-vZz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="XQc-AN-vZz">
                                 <rect key="frame" x="280" y="110" width="40" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="kJa-HY-Gbd"/>
@@ -1454,10 +1454,10 @@
         <image name="Twitter-50" width="25" height="25"/>
         <image name="about" width="25" height="25"/>
         <image name="close" width="64" height="64"/>
-        <image name="logo-1" width="188" height="165"/>
+        <image name="logo" width="100" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OQZ-qu-t4n"/>
+        <segue reference="Ceb-l6-xN5"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.10497488967295501" green="0.32086058822678526" blue="0.51568509615384617" alpha="1" colorSpace="calibratedRGB"/>
 </document>
