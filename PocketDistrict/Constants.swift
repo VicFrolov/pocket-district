@@ -9,8 +9,3 @@
 import Foundation
 
 let BASE_URL = "https://pocketdistrict.firebaseio.com/";
-
-
-
-
-
