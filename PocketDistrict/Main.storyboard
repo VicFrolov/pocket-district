@@ -1426,8 +1426,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="mdo-Ta-AUA"/>
                                 <exclude reference="j0y-kE-64z"/>
+                                <exclude reference="mdo-Ta-AUA"/>
                                 <exclude reference="o3U-ar-noC"/>
                                 <exclude reference="akg-Bo-0un"/>
                             </mask>

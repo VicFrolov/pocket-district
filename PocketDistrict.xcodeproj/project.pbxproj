@@ -14,14 +14,12 @@
 		381162191C9CE740007CD000 /* LoginPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381162181C9CE740007CD000 /* LoginPromptViewController.swift */; };
 		381524DB1C9D29C600A16144 /* CustomSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381524DA1C9D29C600A16144 /* CustomSearchViewController.swift */; };
 		385C99C81CAB6D2600AA1891 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C99C71CAB6D2600AA1891 /* CustomTabBarController.swift */; };
-		3860FF921C9635FA0095A2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3860FF911C9635FA0095A2BF /* Assets.xcassets */; };
 		3860FF9D1C9636BB0095A2BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3860FF9C1C9636BB0095A2BF /* Main.storyboard */; };
 		3860FFAE1C9637010095A2BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FF9F1C9637010095A2BF /* AppDelegate.swift */; };
 		3860FFAF1C9637010095A2BF /* background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3860FFA01C9637010095A2BF /* background.mp4 */; };
 		3860FFB01C9637010095A2BF /* CuratedSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA11C9637010095A2BF /* CuratedSearchTableViewCell.swift */; };
 		3860FFB11C9637010095A2BF /* CuratedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA21C9637010095A2BF /* CuratedViewController.swift */; };
 		3860FFB41C9637010095A2BF /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA51C9637010095A2BF /* LoginPageViewController.swift */; };
-		3860FFB51C9637010095A2BF /* map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3860FFA61C9637010095A2BF /* map.storyboard */; };
 		3860FFB61C9637010095A2BF /* ParentSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA71C9637010095A2BF /* ParentSearchViewController.swift */; };
 		3860FFB81C9637010095A2BF /* searchResultsDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFA91C9637010095A2BF /* searchResultsDetailedViewController.swift */; };
 		3860FFB91C9637010095A2BF /* searchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3860FFAA1C9637010095A2BF /* searchResultsTableViewCell.swift */; };
@@ -43,7 +41,6 @@
 		381524DA1C9D29C600A16144 /* CustomSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchViewController.swift; sourceTree = "<group>"; };
 		385C99C71CAB6D2600AA1891 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		3860FF851C9635FA0095A2BF /* PocketDistrict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketDistrict.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3860FF911C9635FA0095A2BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3860FF9C1C9636BB0095A2BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3860FF9E1C9637000095A2BF /* PocketDistrict-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketDistrict-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		3860FF9F1C9637010095A2BF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +48,6 @@
 		3860FFA11C9637010095A2BF /* CuratedSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CuratedSearchTableViewCell.swift; path = ../CuratedSearchTableViewCell.swift; sourceTree = "<group>"; };
 		3860FFA21C9637010095A2BF /* CuratedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CuratedViewController.swift; path = ../CuratedViewController.swift; sourceTree = "<group>"; };
 		3860FFA51C9637010095A2BF /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPageViewController.swift; path = ../LoginPageViewController.swift; sourceTree = "<group>"; };
-		3860FFA61C9637010095A2BF /* map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = map.storyboard; path = ../map.storyboard; sourceTree = "<group>"; };
 		3860FFA71C9637010095A2BF /* ParentSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParentSearchViewController.swift; path = ../ParentSearchViewController.swift; sourceTree = "<group>"; };
 		3860FFA91C9637010095A2BF /* searchResultsDetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = searchResultsDetailedViewController.swift; path = ../searchResultsDetailedViewController.swift; sourceTree = "<group>"; };
 		3860FFAA1C9637010095A2BF /* searchResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = searchResultsTableViewCell.swift; path = ../searchResultsTableViewCell.swift; sourceTree = "<group>"; };
@@ -141,12 +137,10 @@
 			children = (
 				380182F01C994D5A00885E91 /* Services */,
 				380182EC1C994A6500885E91 /* Constants.swift */,
-				3860FF911C9635FA0095A2BF /* Assets.xcassets */,
 				3860FF9F1C9637010095A2BF /* AppDelegate.swift */,
 				3860FFA01C9637010095A2BF /* background.mp4 */,
 				380182EB1C994A0300885E91 /* View */,
 				380182EA1C9949DD00885E91 /* Controller */,
-				3860FFA61C9637010095A2BF /* map.storyboard */,
 				3860FF9E1C9637000095A2BF /* PocketDistrict-Bridging-Header.h */,
 				3860FF9C1C9636BB0095A2BF /* Main.storyboard */,
 			);
@@ -238,10 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3860FFAF1C9637010095A2BF /* background.mp4 in Resources */,
-				3860FFB51C9637010095A2BF /* map.storyboard in Resources */,
 				3860FF9D1C9636BB0095A2BF /* Main.storyboard in Resources */,
 				3860FFBE1C9637210095A2BF /* Default-568h@2x.png in Resources */,
-				3860FF921C9635FA0095A2BF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +403,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 08F4CAB79D73FA2F47DB19E3 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PocketDistrict/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -426,7 +417,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CCE6ACA4EB7BA80F4610199 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PocketDistrict/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
