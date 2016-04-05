@@ -224,9 +224,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M08-lk-ysC">
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M08-lk-ysC">
                                 <rect key="frame" x="50" y="20" width="500" height="130"/>
-                                <color key="backgroundColor" red="0.45380765610000001" green="0.48752081400000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="30"/>
@@ -1347,6 +1347,26 @@
                                             <action selector="createAccount:" destination="Rcl-Pd-U2k" eventType="touchUpInside" id="Cej-PA-sGN"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Li-CU-Ejp">
+                                        <rect key="frame" x="111" y="298" width="48" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="o8v-jT-MAQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="o8v-jT-MAQ"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="cancelCreateAccount:" destination="Rcl-Pd-U2k" eventType="touchUpInside" id="Bsn-fI-2OL"/>
+                                            <action selector="cancelCreateAccount:" destination="pzA-q9-U28" eventType="touchUpInside" id="sDV-qF-Xoq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1360,48 +1380,18 @@
                                     <constraint firstItem="MXa-6p-cIb" firstAttribute="top" secondItem="Op7-CT-gtt" secondAttribute="bottom" constant="32" id="dxC-tP-7RZ"/>
                                     <constraint firstAttribute="centerX" secondItem="3oT-rt-NPf" secondAttribute="centerX" constant="-1" id="mry-0w-9ab"/>
                                     <constraint firstItem="0tf-40-nhz" firstAttribute="centerX" secondItem="3oT-rt-NPf" secondAttribute="centerX" constant="-0.5" id="pDN-M5-QJg"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Li-CU-Ejp" secondAttribute="bottom" constant="15" id="rDV-hJ-1OT"/>
                                     <constraint firstItem="0tf-40-nhz" firstAttribute="top" secondItem="3oT-rt-NPf" secondAttribute="bottom" constant="3" id="rXB-He-3gQ"/>
+                                    <constraint firstItem="5Li-CU-Ejp" firstAttribute="centerX" secondItem="Y6G-tr-Q28" secondAttribute="centerX" id="rqW-wJ-V8x"/>
                                     <constraint firstItem="Op7-CT-gtt" firstAttribute="centerX" secondItem="r39-u8-jTv" secondAttribute="centerX" id="sA9-OE-YLg"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqV-Qo-bMF">
-                                <rect key="frame" x="554" y="8" width="30" height="30"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="dTq-WL-YEf"/>
-                                    <constraint firstAttribute="width" constant="30" id="yw2-Nq-jzM"/>
-                                </constraints>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="close"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="cancelCreateAccount:" destination="Rcl-Pd-U2k" eventType="touchUpInside" id="Z3f-Fd-cj5"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980390000002" green="0.74509803919999995" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="Y6G-tr-Q28" secondAttribute="centerY" id="60K-Y9-LlG"/>
                             <constraint firstAttribute="centerX" secondItem="Y6G-tr-Q28" secondAttribute="centerX" id="Ii4-hZ-J2d"/>
-                            <constraint firstAttribute="trailing" secondItem="uqV-Qo-bMF" secondAttribute="trailing" constant="16" id="UpR-jA-EBn"/>
-                            <constraint firstItem="CHg-YY-oUr" firstAttribute="top" secondItem="uqV-Qo-bMF" secondAttribute="bottom" constant="542" id="akg-Bo-0un"/>
-                            <constraint firstItem="uqV-Qo-bMF" firstAttribute="top" secondItem="6Qj-id-Jxr" secondAttribute="bottom" constant="8" id="j0y-kE-64z"/>
-                            <constraint firstItem="uqV-Qo-bMF" firstAttribute="leading" secondItem="qu6-nj-jFy" secondAttribute="leading" constant="554" id="mdo-Ta-AUA"/>
-                            <constraint firstAttribute="trailing" secondItem="uqV-Qo-bMF" secondAttribute="trailing" constant="16" id="o3U-ar-noC"/>
-                            <constraint firstItem="uqV-Qo-bMF" firstAttribute="top" secondItem="6Qj-id-Jxr" secondAttribute="bottom" constant="8" id="zjE-wh-8Rm"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="j0y-kE-64z"/>
-                                <exclude reference="mdo-Ta-AUA"/>
-                                <exclude reference="o3U-ar-noC"/>
-                                <exclude reference="akg-Bo-0un"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="emailField" destination="0tf-40-nhz" id="cXz-g2-en0"/>
@@ -1642,11 +1632,10 @@
         <image name="Search Filled-50" width="25" height="25"/>
         <image name="Twitter-50" width="25" height="25"/>
         <image name="about" width="25" height="25"/>
-        <image name="close" width="64" height="64"/>
         <image name="logo" width="100" height="110"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ceb-l6-xN5"/>
+        <segue reference="OQZ-qu-t4n"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.10497488967295501" green="0.32086058822678526" blue="0.51568509615384617" alpha="1" colorSpace="calibratedRGB"/>
 </document>
