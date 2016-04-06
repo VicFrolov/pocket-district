@@ -10,9 +10,6 @@ import UIKit
 
 class searchResultsTableViewController: UITableViewController {
     
-
-    
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) ->
         Int {
             if let tbc = self.tabBarController as? CustomTabBarController {
@@ -29,8 +26,6 @@ class searchResultsTableViewController: UITableViewController {
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! searchResultsTableViewCell
         
- 
-
         // Configure the cell...
         if let tbc = self.tabBarController as? CustomTabBarController {
             cell.usernameLabel?.text = tbc.categorizedArray[indexPath.row]["screenname"] as! String?
@@ -40,10 +35,9 @@ class searchResultsTableViewController: UITableViewController {
         return cell
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self cizing sells
+        //self sizing cells
         tableView.estimatedRowHeight = 36.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
@@ -54,19 +48,13 @@ class searchResultsTableViewController: UITableViewController {
         //reload table data
         self.tableView.reloadData()
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
 
 }

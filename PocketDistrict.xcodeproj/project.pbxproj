@@ -32,7 +32,6 @@
 		3860FFBE1C9637210095A2BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3860FFBD1C9637210095A2BF /* Default-568h@2x.png */; };
 		3860FFC01C9637CB0095A2BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3860FFBF1C9637CB0095A2BF /* MapKit.framework */; };
 		38D752BF1C98FB99007387AA /* resultsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D752BE1C98FB99007387AA /* resultsContainerViewController.swift */; };
-		38E369BE1C9A0CEB00424A40 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E369BD1C9A0CEB00424A40 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +62,6 @@
 		3860FFBD1C9637210095A2BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3860FFBF1C9637CB0095A2BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		38D752BE1C98FB99007387AA /* resultsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultsContainerViewController.swift; sourceTree = "<group>"; };
-		38E369BD1C9A0CEB00424A40 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		43060C616BFDD82268783772 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CCE6ACA4EB7BA80F4610199 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +91,6 @@
 				3860FFAB1C9637010095A2BF /* searchResultsTableViewController.swift */,
 				3860FFA91C9637010095A2BF /* searchResultsDetailedViewController.swift */,
 				38D752BE1C98FB99007387AA /* resultsContainerViewController.swift */,
-				38E369BD1C9A0CEB00424A40 /* ProfileViewController.swift */,
 				381524DA1C9D29C600A16144 /* CustomSearchViewController.swift */,
 				385C99C71CAB6D2600AA1891 /* CustomTabBarController.swift */,
 				3808BDD61CB3A05F0033F6B0 /* SearchResultsMapViewController.swift */,
@@ -310,7 +307,6 @@
 				3860FFBB1C9637010095A2BF /* TypeOfActivityTableViewCell.swift in Sources */,
 				3828086F1CB46ED800529672 /* ProfileTableViewController.swift in Sources */,
 				3860FFAE1C9637010095A2BF /* AppDelegate.swift in Sources */,
-				38E369BE1C9A0CEB00424A40 /* ProfileViewController.swift in Sources */,
 				385C99C81CAB6D2600AA1891 /* CustomTabBarController.swift in Sources */,
 				3860FFB41C9637010095A2BF /* LoginPageViewController.swift in Sources */,
 				3808BDD71CB3A05F0033F6B0 /* SearchResultsMapViewController.swift in Sources */,

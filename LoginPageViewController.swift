@@ -14,12 +14,10 @@ class LoginPageViewController: UIViewController {
     var avPlayer: AVPlayer!
     var avPlayerLayer: AVPlayerLayer!
     var paused: Bool = false
-    
 
     override func viewDidLoad() {
         //hide the navbar
         UIApplication.sharedApplication().statusBarHidden = true
-        
         
         //display video playing in bg
         let theURL = NSBundle.mainBundle().URLForResource("background", withExtension: "mp4")
@@ -38,7 +36,6 @@ class LoginPageViewController: UIViewController {
             selector: #selector(LoginPageViewController.playerItemDidReachEnd(_:)),
             name: AVPlayerItemDidPlayToEndTimeNotification,
             object: avPlayer.currentItem)
-        
     }
     
     func playerItemDidReachEnd(notification: NSNotification) {
@@ -61,17 +58,5 @@ class LoginPageViewController: UIViewController {
         paused = true
     }
     
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 

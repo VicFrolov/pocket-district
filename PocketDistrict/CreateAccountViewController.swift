@@ -17,15 +17,11 @@ class CreateAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
         self.hideKeyboardWhenTappedAround()
-
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func createAccount(sender: AnyObject) {
@@ -36,7 +32,6 @@ class CreateAccountViewController: UIViewController {
         if username != "" && email != "" && password != "" {
             
             // Set Email and Password for the New User.
-            
             DataService.dataService.BASE_REF.createUser(email, password: password, withValueCompletionBlock: { error, result in
                 
                 if error != nil {
@@ -67,7 +62,6 @@ class CreateAccountViewController: UIViewController {
         } else {
             signupErrorAlert("Oops!", message: "Don't forget to enter your email, password, and a username.")
         }
-        
     }
     
     @IBAction func cancelCreateAccount(sender: AnyObject) {

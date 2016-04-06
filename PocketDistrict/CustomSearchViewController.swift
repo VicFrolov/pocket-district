@@ -17,8 +17,6 @@ class CustomSearchTableViewController: UITableViewController {
     @IBOutlet weak var searchLat: UITextField!
     @IBOutlet weak var searchLon: UITextField!
 
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
@@ -26,7 +24,6 @@ class CustomSearchTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -63,7 +60,6 @@ class CustomSearchTableViewController: UITableViewController {
         }
     }
 
-    
     override func viewDidAppear(animated:Bool) {
         super.viewDidAppear(animated)
     }

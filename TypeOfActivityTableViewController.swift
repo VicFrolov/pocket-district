@@ -24,12 +24,12 @@ class TypeOfActivityTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-            let cellIdentifier = "Cell"
-            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TypeOfActivityTableViewCell
-            cell.activityLabel?.text = activityNames[indexPath.row]
-            cell.bgImage?.image = UIImage(named: activityPic[indexPath.row])
-            cell.sloganLabel?.text = slogan[indexPath.row]
-            return cell
+        let cellIdentifier = "Cell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TypeOfActivityTableViewCell
+        cell.activityLabel?.text = activityNames[indexPath.row]
+        cell.bgImage?.image = UIImage(named: activityPic[indexPath.row])
+        cell.sloganLabel?.text = slogan[indexPath.row]
+        return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath
@@ -44,7 +44,6 @@ class TypeOfActivityTableViewController: UITableViewController {
         super.viewDidLoad()
         // remove spacing between table and navbar
         self.automaticallyAdjustsScrollViewInsets = false
-
     }
 
     
@@ -67,7 +66,6 @@ class TypeOfActivityTableViewController: UITableViewController {
         //make API request using tabBarController methods
         if let tbc = self.tabBarController as? CustomTabBarController {
             tbc.alamoRequest(twitterUrlRequest)
-
         }
     }
 

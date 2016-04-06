@@ -12,7 +12,6 @@ class LoginPromptViewController: UIViewController {
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +33,6 @@ class LoginPromptViewController: UIViewController {
             self.performSegueWithIdentifier("CurrentlyLoggedIn", sender: nil)
         }
     }
-    
     
     @IBAction func tryLogin(sender: AnyObject) {
         let email = emailField.text
@@ -72,15 +70,5 @@ class LoginPromptViewController: UIViewController {
     @IBAction func cancelCreateAccount(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: {})
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
