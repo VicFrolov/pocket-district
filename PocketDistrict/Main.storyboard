@@ -761,13 +761,17 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r0W-lz-qaG">
-                                            <rect key="frame" x="8" y="8" width="59" height="58"/>
+                                            <rect key="frame" x="8" y="18" width="59" height="58"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="59" id="XpS-j3-Wk6"/>
+                                                <constraint firstAttribute="height" constant="58" id="eCj-4I-Atk"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgp-rq-Abt">
-                                            <rect key="frame" x="75" y="5" width="400" height="20"/>
+                                            <rect key="frame" x="77" y="5" width="400" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="400" id="f6f-P6-9id"/>
+                                            </constraints>
                                             <attributedString key="attributedText">
                                                 <fragment content="usernameLabel">
                                                     <attributes>
@@ -780,7 +784,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" verticalHuggingPriority="249" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Msk-SF-ibU">
-                                            <rect key="frame" x="70" y="26" width="509" height="40"/>
+                                            <rect key="frame" x="72" y="26" width="507" height="40"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="516" id="uea-9D-eTO"/>
@@ -802,29 +806,37 @@
                                         </textView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="r0W-lz-qaG" firstAttribute="top" secondItem="qD3-fu-rhl" secondAttribute="topMargin" constant="10" id="2hP-5u-40v"/>
                                         <constraint firstItem="Pgp-rq-Abt" firstAttribute="leading" secondItem="r0W-lz-qaG" secondAttribute="trailing" constant="8" id="6Fd-2T-LdW"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="r0W-lz-qaG" secondAttribute="bottom" constant="45.5" id="8bz-Dt-wYG"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Msk-SF-ibU" secondAttribute="trailing" constant="20" id="9A2-jf-FCb"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Msk-SF-ibU" secondAttribute="bottom" constant="45" id="D79-FS-O3i"/>
                                         <constraint firstItem="Msk-SF-ibU" firstAttribute="top" secondItem="Pgp-rq-Abt" secondAttribute="bottom" constant="-6" id="DiW-DX-VNg"/>
+                                        <constraint firstItem="Pgp-rq-Abt" firstAttribute="top" secondItem="qD3-fu-rhl" secondAttribute="topMargin" constant="-3" id="Fon-ne-j6e"/>
                                         <constraint firstItem="Msk-SF-ibU" firstAttribute="leading" secondItem="r0W-lz-qaG" secondAttribute="trailing" constant="1" id="GLA-lN-WGP"/>
                                         <constraint firstItem="Msk-SF-ibU" firstAttribute="leading" secondItem="r0W-lz-qaG" secondAttribute="trailing" constant="3" id="KJK-X8-fBI"/>
                                         <constraint firstItem="r0W-lz-qaG" firstAttribute="top" secondItem="qD3-fu-rhl" secondAttribute="topMargin" id="NFB-Zz-NVn"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Pgp-rq-Abt" secondAttribute="trailing" constant="117" id="Nv5-1g-dtd"/>
-                                        <constraint firstItem="Pgp-rq-Abt" firstAttribute="top" secondItem="qD3-fu-rhl" secondAttribute="topMargin" constant="-3" id="Qh7-RY-Uw2"/>
+                                        <constraint firstItem="Pgp-rq-Abt" firstAttribute="leading" secondItem="r0W-lz-qaG" secondAttribute="trailing" constant="10" id="Sie-ju-u2j"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="cbc-QF-nBX" secondAttribute="trailing" constant="5" id="Ul5-7D-LbI"/>
                                         <constraint firstItem="Msk-SF-ibU" firstAttribute="bottom" secondItem="qD3-fu-rhl" secondAttribute="bottomMargin" constant="5" id="ZL1-RL-tg5"/>
                                         <constraint firstItem="cbc-QF-nBX" firstAttribute="top" secondItem="qD3-fu-rhl" secondAttribute="topMargin" id="aJZ-k0-7QY"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Msk-SF-ibU" secondAttribute="trailing" constant="13" id="aiQ-an-xKc"/>
+                                        <constraint firstItem="r0W-lz-qaG" firstAttribute="leading" secondItem="qD3-fu-rhl" secondAttribute="leadingMargin" id="dGM-VT-AlJ"/>
                                         <constraint firstItem="r0W-lz-qaG" firstAttribute="leading" secondItem="qD3-fu-rhl" secondAttribute="leadingMargin" id="f7c-f9-VRF"/>
-                                        <constraint firstItem="Msk-SF-ibU" firstAttribute="top" secondItem="Pgp-rq-Abt" secondAttribute="bottom" constant="1" id="yrz-Vh-J5J"/>
+                                        <constraint firstItem="Msk-SF-ibU" firstAttribute="top" secondItem="Pgp-rq-Abt" secondAttribute="bottom" constant="1" id="qIK-Md-Lsp"/>
+                                        <constraint firstItem="Msk-SF-ibU" firstAttribute="leading" secondItem="r0W-lz-qaG" secondAttribute="trailing" constant="5" id="vL4-LP-Na8"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
+                                            <exclude reference="8bz-Dt-wYG"/>
+                                            <exclude reference="NFB-Zz-NVn"/>
+                                            <exclude reference="f7c-f9-VRF"/>
                                             <exclude reference="9A2-jf-FCb"/>
                                             <exclude reference="DiW-DX-VNg"/>
                                             <exclude reference="GLA-lN-WGP"/>
+                                            <exclude reference="KJK-X8-fBI"/>
                                             <exclude reference="ZL1-RL-tg5"/>
+                                            <exclude reference="6Fd-2T-LdW"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
