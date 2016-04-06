@@ -47,7 +47,6 @@ class CustomSearchTableViewController: UITableViewController {
         if geoSearchWord != "" {
             geoSearchLat = "&"
         }
-        
         geoSearchLat += "geoSearchWordLat=" + (searchLat.text! == "" ? "33.9700" : lat)
         
         let geoSearchLon = "&geoSearchWordLon=" + (searchLon.text! == "" ? "-118.4180" : lon)
@@ -56,67 +55,11 @@ class CustomSearchTableViewController: UITableViewController {
         let searchWords: String = "https://quiet-cove-5048.herokuapp.com/tw?\(geoSearchWord)\(geoSearchLat)\(geoSearchLon)\(geoSearchRadius)"
         
         let twitterUrlRequest: String = searchWords.stringByAddingPercentEncodingWithAllowedCharacters( NSCharacterSet.URLQueryAllowedCharacterSet())!
-        alamoRequest(twitterUrlRequest)
         
-    }
-    
-    func alamoRequest(url: String) {
-        Alamofire.request(.GET, url).validate().responseJSON { response in
-            switch response.result {
-            case .Success:
-                if let value = response.result.value {
-                    let json = JSON(value)
-                    let count = json["statuses"].count
-                    self.twitterResults(json, count:count)
-                }
-            case .Failure(let error):
-                print(error)
-            }
-        }
-    }
-    
-    
-    
-    func twitterResults(json:JSON, count:Int) {
-        //jump to new tab to reveal results
-        self.tabBarController!.selectedIndex = 2;
-        
-        
-        //Ensure that CustomTabBarController exists
+        //make API request using the tabBarController
         if let tbc = self.tabBarController as? CustomTabBarController {
-            //set loadResults to true so that everytime that tab bar appears it doesn't 
-            //load over and over, and only on a search.
-            tbc.loadResults = true
+            tbc.alamoRequest(twitterUrlRequest)
             
-            for i in (0 ..< count) {
-                var currentUsersInfo = [String:AnyObject]()
-            
-                if let screenname = json["statuses"][i]["user"]["screen_name"].string {
-                    currentUsersInfo["screenname"] = screenname
-                }
-                if let userPost = json["statuses"][i]["text"].string {
-                    currentUsersInfo["userPost"] = userPost
-                }
-                if let userPic = json["statuses"][i]["user"]["profile_image_url_https"].string {
-                    currentUsersInfo["userPicUrl"] = userPic
-                }
-                if let timePosted = json["statuses"][i]["created_at"].string {
-                    currentUsersInfo["timePosted"] = timePosted
-                }
-                if let geoLat = json["statuses"][i]["geo"]["coordinates"][0].float {
-                    currentUsersInfo["geoLat"] = geoLat
-                }
-                if let geoLon = json["statuses"][i]["geo"]["coordinates"][1].float {
-                    currentUsersInfo["geoLon"] = geoLon
-                }
-                
-                tbc.categorizedArray.append(currentUsersInfo)
-            }
-        
-            for i in (0 ..< tbc.categorizedArray.count) {
-                print(tbc.categorizedArray[i])
-                print(" ")
-            }
         }
     }
 
