@@ -28,6 +28,8 @@ class searchResultsTableViewController: UITableViewController {
         NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! searchResultsTableViewCell
+        
+ 
 
         // Configure the cell...
         if let tbc = self.tabBarController as? CustomTabBarController {
@@ -41,6 +43,10 @@ class searchResultsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self cizing sells
+        tableView.estimatedRowHeight = 36.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
     }
     
     override func viewDidAppear(animated: Bool) {

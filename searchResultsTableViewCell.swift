@@ -12,10 +12,8 @@ class searchResultsTableViewCell: UITableViewCell {
     
     @IBOutlet var usernameLabel: UILabel!
     @IBOutlet var userImageLabel: UIImageView!
-    @IBOutlet var tweetLabel: UILabel!
     @IBOutlet var tweetTimeLabel: UILabel!
-
-    
+    @IBOutlet weak var tweetLabel: UITextView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
