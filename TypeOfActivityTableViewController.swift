@@ -64,6 +64,7 @@ class TypeOfActivityTableViewController: UITableViewController {
         let searchWords: String = "https://quiet-cove-5048.herokuapp.com/tw?\(geoSearchWord)\(geoSearchLat)\(geoSearchLon)\(geoSearchRadius)"
         
         let twitterUrlRequest: String = searchWords.stringByAddingPercentEncodingWithAllowedCharacters( NSCharacterSet.URLQueryAllowedCharacterSet())!
+        print(twitterUrlRequest)
         alamoRequest(twitterUrlRequest)
     }
     
@@ -107,7 +108,7 @@ class TypeOfActivityTableViewController: UITableViewController {
                 if let userPic = json["statuses"][i]["user"]["profile_image_url_https"].string {
                     currentUsersInfo["userPicUrl"] = userPic
                 }
-                if let timePosted = json["statuses"][i]["user"]["created_at"].string {
+                if let timePosted = json["statuses"][i]["created_at"].string {
                     currentUsersInfo["timePosted"] = timePosted
                 }
                 if let geoLat = json["statuses"][i]["geo"]["coordinates"][0].float {
