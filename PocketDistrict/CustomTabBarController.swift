@@ -42,6 +42,15 @@ class CustomTabBarController: UITabBarController {
         }
     }
     
+    func twitterDateFormatter(inputDate: String) -> String {
+        let dateFormat = NSDateFormatter()
+        dateFormat.dateFormat = "eee MMM dd HH:mm:ss ZZZZ yyyy"
+        let date = dateFormat.dateFromString(inputDate)
+        dateFormat.dateFormat = "MMM dd, hh:mm a"
+        return dateFormat.stringFromDate(date!)
+        
+    }
+    
     func twitterResults(json:JSON, count:Int) {
         //jump to new tab to reveal results
         self.selectedIndex = 2;
@@ -63,7 +72,7 @@ class CustomTabBarController: UITabBarController {
                 currentUsersInfo["userPicUrl"] = userPic
             }
             if let timePosted = json["statuses"][i]["created_at"].string {
-                currentUsersInfo["timePosted"] = timePosted
+                currentUsersInfo["timePosted"] = twitterDateFormatter(timePosted)
             }
             if let geoLat = json["statuses"][i]["geo"]["coordinates"][0].float {
                 currentUsersInfo["geoLat"] = geoLat
@@ -71,7 +80,6 @@ class CustomTabBarController: UITabBarController {
             if let geoLon = json["statuses"][i]["geo"]["coordinates"][1].float {
                 currentUsersInfo["geoLon"] = geoLon
             }
-            
             self.categorizedArray.append(currentUsersInfo)
         }
         
