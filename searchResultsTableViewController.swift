@@ -33,11 +33,15 @@ class searchResultsTableViewController: UITableViewController {
             cell.usernameLabel?.text = tbc.categorizedArray[indexPath.row]["screenname"] as! String?
             cell.tweetLabel?.text = tbc.categorizedArray[indexPath.row]["userPost"] as! String?
             cell.tweetTimeLabel?.text = tbc.categorizedArray[indexPath.row]["timePosted"] as! String?
-//            cell.userImageLabel?.image =
+            
+            if let userpic = tbc.categorizedArray[indexPath.row]["userPicUrl"] as! String! {
+                cell.userImageLabel?.imageFromUrl(userpic)
+            } else {
+                print("lololololol")
+            }
             
             
             
-            cell.userImageLabel.image = UIImage(named: "cafelore.jpg")
 //            Alamofire.request(.GET, imageURL)
 //                .responseImage() { (request, _, image, error) in
 //                    if error == nil && image != nil {
@@ -46,6 +50,7 @@ class searchResultsTableViewController: UITableViewController {
 //            }
 
         }
+
         return cell
     }
     
