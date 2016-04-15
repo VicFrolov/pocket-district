@@ -21,6 +21,8 @@ class ProfileTableViewController: UITableViewController {
     }
     
     
+    
+    
     @IBAction func logout(sender: AnyObject) {
         
         // unauth() is the logout method for the current user.
@@ -32,6 +34,12 @@ class ProfileTableViewController: UITableViewController {
         // Head back to Login!
         let loginViewController = self.storyboard!.instantiateViewControllerWithIdentifier("Login")
         UIApplication.sharedApplication().keyWindow?.rootViewController = loginViewController
+    }
+    
+    
+    
+    @IBAction func banana() {
+        self.dismissViewControllerAnimated(true, completion: {})
     }
 
 }

@@ -14,7 +14,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var headerLabel:UILabel!
     @IBOutlet var headerImageView:UIImageView!
     @IBOutlet var headerBlurImageView:UIImageView!
-    @IBOutlet var settingsImageView:UIImageView!
+
 
     var blurredHeaderImageView:UIImageView?
     
