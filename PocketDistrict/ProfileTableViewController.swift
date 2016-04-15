@@ -38,7 +38,7 @@ class ProfileTableViewController: UITableViewController {
     
     
     
-    @IBAction func banana() {
+    @IBAction func closeSettings() {
         self.dismissViewControllerAnimated(true, completion: {})
     }
 

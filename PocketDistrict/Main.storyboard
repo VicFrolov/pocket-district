@@ -1650,7 +1650,7 @@
                     <navigationItem key="navigationItem" title="Your Stuff" id="L7w-iF-4qd">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="Li0-aL-Trw">
                             <connections>
-                                <action selector="banana" destination="Xzn-5B-SwT" id="rGM-A2-NNm"/>
+                                <action selector="closeSettings" destination="Xzn-5B-SwT" id="ovf-h8-pjK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
