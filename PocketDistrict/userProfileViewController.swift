@@ -24,16 +24,14 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         avatarImage.layer.borderColor = UIColor.whiteColor().CGColor
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(true)
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(true)
         self.navigationController!.navigationBar.hidden = false
-
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController!.navigationBar.hidden = true
-
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -47,7 +45,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         // Header - Blurred Image
         
         headerBlurImageView = UIImageView(frame: header.bounds)
-//        headerBlurImageView?.image = UIImage(named: "header_bg")?.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
+        headerBlurImageView?.image = UIImage(named: "header_bg")?.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
         headerBlurImageView?.contentMode = UIViewContentMode.ScaleAspectFill
         headerBlurImageView?.alpha = 0.0
         header.insertSubview(headerBlurImageView, belowSubview: headerLabel)
