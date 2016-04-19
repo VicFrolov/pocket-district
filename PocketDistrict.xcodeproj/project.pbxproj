@@ -17,6 +17,7 @@
 		3828086F1CB46ED800529672 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828086E1CB46ED800529672 /* ProfileTableViewController.swift */; };
 		3830D54A1CC104AC00F55890 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3830D5491CC104AC00F55890 /* LaunchScreen.xib */; };
 		3830D54D1CC106F400F55890 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3830D54C1CC106F400F55890 /* FXBlurView.m */; };
+		3830D5501CC6473800F55890 /* customSearchLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3830D54F1CC6473800F55890 /* customSearchLocationTableViewController.swift */; };
 		38339ADE1CC0D50400AC9AAB /* userProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38339ADD1CC0D50400AC9AAB /* userProfileViewController.swift */; };
 		38339AE21CC0FA9600AC9AAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38339AE11CC0FA9600AC9AAB /* Images.xcassets */; };
 		385C99C81CAB6D2600AA1891 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C99C71CAB6D2600AA1891 /* CustomTabBarController.swift */; };
@@ -49,6 +50,7 @@
 		3830D5481CC104AC00F55890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3830D54B1CC106F400F55890 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = "../../../../../Downloads/TB_TwitterUI-master/TB_TwitterHeader/FXBlurView.h"; sourceTree = "<group>"; };
 		3830D54C1CC106F400F55890 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = "../../../../../Downloads/TB_TwitterUI-master/TB_TwitterHeader/FXBlurView.m"; sourceTree = "<group>"; };
+		3830D54F1CC6473800F55890 /* customSearchLocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customSearchLocationTableViewController.swift; sourceTree = "<group>"; };
 		38339ADD1CC0D50400AC9AAB /* userProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfileViewController.swift; sourceTree = "<group>"; };
 		38339AE11CC0FA9600AC9AAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		385C99C71CAB6D2600AA1891 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				3808BDD61CB3A05F0033F6B0 /* SearchResultsMapViewController.swift */,
 				3828086E1CB46ED800529672 /* ProfileTableViewController.swift */,
 				38339ADD1CC0D50400AC9AAB /* userProfileViewController.swift */,
+				3830D54F1CC6473800F55890 /* customSearchLocationTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				3860FFB91C9637010095A2BF /* searchResultsTableViewCell.swift in Sources */,
 				380182ED1C994A6500885E91 /* Constants.swift in Sources */,
 				38D752BF1C98FB99007387AA /* resultsContainerViewController.swift in Sources */,
+				3830D5501CC6473800F55890 /* customSearchLocationTableViewController.swift in Sources */,
 				3860FFB81C9637010095A2BF /* searchResultsDetailedViewController.swift in Sources */,
 				3860FFB61C9637010095A2BF /* ParentSearchViewController.swift in Sources */,
 				3860FFBA1C9637010095A2BF /* searchResultsTableViewController.swift in Sources */,
