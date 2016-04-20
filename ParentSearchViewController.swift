@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ParentSearchViewController: UIViewController {
+class ParentSearchViewController: UIViewController, CLLocationManagerDelegate {
+
+    var locationManager: CLLocationManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
+        
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

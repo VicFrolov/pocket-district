@@ -42,7 +42,7 @@ class CustomTabBarController: UITabBarController {
 
     var categorizedArray = [[String: AnyObject]]()
     var loadResults = false;
-    
+
     func alamoRequest(url: String) {
         Alamofire.request(.GET, url).validate().responseJSON { response in
             switch response.result {
