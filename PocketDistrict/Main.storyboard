@@ -615,7 +615,7 @@ type in an address, school or landmark         </string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Klx-Lt-xaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2523" y="-1443"/>
+            <point key="canvasLocation" x="1867" y="-1450"/>
         </scene>
         <!--Tweet Results-->
         <scene sceneID="gNJ-x4-mwQ">
@@ -1766,15 +1766,15 @@ type in an address, school or landmark         </string>
                         <sections>
                             <tableViewSection id="3Vh-gD-K0d">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="190" id="QgO-g0-JQ5">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="190"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="270" id="QgO-g0-JQ5">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="270"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QgO-g0-JQ5" id="Jg3-Wl-FX3">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="190"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="270"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cafelore" translatesAutoresizingMaskIntoConstraints="NO" id="EYl-B7-iGN">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="190"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="270"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZa-eR-dSX">
                                                     <rect key="frame" x="8" y="42" width="584" height="57"/>
@@ -1783,19 +1783,19 @@ type in an address, school or landmark         </string>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="EYl-B7-iGN" secondAttribute="bottom" id="5pr-NJ-MgS"/>
+                                                <constraint firstItem="EYl-B7-iGN" firstAttribute="top" secondItem="Jg3-Wl-FX3" secondAttribute="top" id="9z5-Ho-jlY"/>
                                                 <constraint firstItem="ZZa-eR-dSX" firstAttribute="top" secondItem="Jg3-Wl-FX3" secondAttribute="topMargin" constant="34" id="CfD-Ra-Kbw"/>
                                                 <constraint firstItem="ZZa-eR-dSX" firstAttribute="trailing" secondItem="Jg3-Wl-FX3" secondAttribute="trailingMargin" id="DYe-2v-IWg"/>
+                                                <constraint firstItem="EYl-B7-iGN" firstAttribute="centerX" secondItem="ZZa-eR-dSX" secondAttribute="centerX" id="E9I-OH-gdq"/>
                                                 <constraint firstItem="ZZa-eR-dSX" firstAttribute="leading" secondItem="Jg3-Wl-FX3" secondAttribute="leadingMargin" id="NnO-zY-6pL"/>
-                                                <constraint firstItem="EYl-B7-iGN" firstAttribute="top" secondItem="Jg3-Wl-FX3" secondAttribute="topMargin" constant="-8" id="fWo-dq-zlq"/>
-                                                <constraint firstItem="EYl-B7-iGN" firstAttribute="leading" secondItem="Jg3-Wl-FX3" secondAttribute="leadingMargin" constant="-8" id="fhl-VQ-IDx"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="EYl-B7-iGN" secondAttribute="trailing" constant="-8" id="pRf-88-jV0"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="EYl-B7-iGN" secondAttribute="bottom" constant="-8" id="tkE-ke-j6Z"/>
+                                                <constraint firstItem="EYl-B7-iGN" firstAttribute="leading" secondItem="Jg3-Wl-FX3" secondAttribute="leading" id="kkQ-gE-2xQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="115" id="Ple-aI-gQC">
-                                        <rect key="frame" x="0.0" y="190" width="600" height="115"/>
+                                        <rect key="frame" x="0.0" y="270" width="600" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ple-aI-gQC" id="dWO-lr-FqA">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
@@ -1806,8 +1806,8 @@ type in an address, school or landmark         </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Searchwords" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyl-LE-Hts">
-                                                    <rect key="frame" x="17" y="18" width="117" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searchwords" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyl-LE-Hts">
+                                                    <rect key="frame" x="18" y="18" width="117" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1824,28 +1824,42 @@ type in an address, school or landmark         </string>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="100" id="mFZ-b5-CiQ">
-                                        <rect key="frame" x="0.0" y="305" width="600" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="113" id="mFZ-b5-CiQ">
+                                        <rect key="frame" x="0.0" y="385" width="600" height="113"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mFZ-b5-CiQ" id="dun-GS-xR6">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVT-sM-ON5">
-                                                    <rect key="frame" x="18" y="13" width="61" height="24"/>
+                                                    <rect key="frame" x="18" y="26" width="61" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="yqZ-mC-Zlc">
-                                                    <rect key="frame" x="16" y="47" width="568" height="31"/>
+                                                    <rect key="frame" x="16" y="60" width="568" height="31"/>
                                                     <color key="tintColor" red="0.27450980390000002" green="0.74509803919999995" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="sliderValueChanged:" destination="30a-Zt-wRq" eventType="valueChanged" id="iiT-9t-v9h"/>
+                                                    </connections>
                                                 </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Miles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgQ-No-vIA">
+                                                    <rect key="frame" x="120" y="24" width="360" height="28"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="360" id="51F-bQ-EWr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="yqZ-mC-Zlc" firstAttribute="centerX" secondItem="dun-GS-xR6" secondAttribute="centerX" id="Auh-ud-Jo7"/>
+                                                <constraint firstItem="BgQ-No-vIA" firstAttribute="centerX" secondItem="yqZ-mC-Zlc" secondAttribute="centerX" id="B3U-8Y-lvH"/>
                                                 <constraint firstItem="gVT-sM-ON5" firstAttribute="top" secondItem="dun-GS-xR6" secondAttribute="topMargin" constant="11" id="ETC-Od-ND2"/>
                                                 <constraint firstItem="yqZ-mC-Zlc" firstAttribute="top" secondItem="gVT-sM-ON5" secondAttribute="bottom" constant="10" id="H1s-Nw-9I2"/>
+                                                <constraint firstItem="yqZ-mC-Zlc" firstAttribute="top" secondItem="BgQ-No-vIA" secondAttribute="bottom" constant="8" symbolic="YES" id="OJD-Pw-y8E"/>
                                                 <constraint firstItem="yqZ-mC-Zlc" firstAttribute="leading" secondItem="dun-GS-xR6" secondAttribute="leadingMargin" constant="10" id="Usl-g0-yWa"/>
                                                 <constraint firstItem="yqZ-mC-Zlc" firstAttribute="leading" secondItem="gVT-sM-ON5" secondAttribute="leading" id="etI-4g-9IZ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="yqZ-mC-Zlc" secondAttribute="bottom" constant="15" id="vaf-lM-ltS"/>
@@ -1859,21 +1873,14 @@ type in an address, school or landmark         </string>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="164" id="nKP-Yt-dMJ">
-                                        <rect key="frame" x="0.0" y="405" width="600" height="164"/>
+                                        <rect key="frame" x="0.0" y="498" width="600" height="164"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nKP-Yt-dMJ" id="zpJ-pu-lTF">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="164"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13d-pH-8L5">
-                                                    <rect key="frame" x="18" y="43" width="144" height="33"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <state key="normal" title="Advanced Settings">
-                                                        <color key="titleColor" red="0.27450980390000002" green="0.74509803919999995" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIf-eh-LaD">
-                                                    <rect key="frame" x="18" y="84" width="564" height="46"/>
+                                                    <rect key="frame" x="18" y="55" width="564" height="46"/>
                                                     <color key="backgroundColor" red="0.27450980390000002" green="0.74509803919999995" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="46" id="nfr-J7-ZbQ"/>
@@ -1891,12 +1898,10 @@ type in an address, school or landmark         </string>
                                                 <constraint firstItem="tIf-eh-LaD" firstAttribute="leading" secondItem="zpJ-pu-lTF" secondAttribute="leadingMargin" constant="10" id="2aI-25-mAW"/>
                                                 <constraint firstItem="tIf-eh-LaD" firstAttribute="bottom" secondItem="zpJ-pu-lTF" secondAttribute="bottomMargin" id="CQk-vf-eKl"/>
                                                 <constraint firstItem="tIf-eh-LaD" firstAttribute="leading" secondItem="zpJ-pu-lTF" secondAttribute="leadingMargin" constant="10" id="IEP-0n-fEw"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="tIf-eh-LaD" secondAttribute="bottom" constant="26" id="QaX-S0-4C0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="tIf-eh-LaD" secondAttribute="bottom" constant="55" id="QaX-S0-4C0"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="tIf-eh-LaD" secondAttribute="bottom" constant="66" id="a7j-25-Tae"/>
-                                                <constraint firstItem="tIf-eh-LaD" firstAttribute="top" secondItem="13d-pH-8L5" secondAttribute="bottom" constant="8" symbolic="YES" id="c8t-bB-rBn"/>
                                                 <constraint firstItem="tIf-eh-LaD" firstAttribute="top" secondItem="zpJ-pu-lTF" secondAttribute="topMargin" constant="45" id="d1A-CD-5el"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="tIf-eh-LaD" secondAttribute="trailing" constant="10" id="i6S-It-URn"/>
-                                                <constraint firstItem="tIf-eh-LaD" firstAttribute="leading" secondItem="13d-pH-8L5" secondAttribute="leading" id="k1e-xc-MhX"/>
                                                 <constraint firstItem="tIf-eh-LaD" firstAttribute="centerX" secondItem="zpJ-pu-lTF" secondAttribute="centerX" id="tc3-yC-ino"/>
                                             </constraints>
                                             <variation key="default">
@@ -1922,13 +1927,14 @@ type in an address, school or landmark         </string>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="14Y-a2-HFz"/>
                     <connections>
+                        <outlet property="radiusLabel" destination="BgQ-No-vIA" id="zWx-xC-JYi"/>
                         <outlet property="searchQ" destination="F62-jq-QUk" id="wnq-hE-jhW"/>
                         <outlet property="searchRadius" destination="yqZ-mC-Zlc" id="nmZ-UM-e9J"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gl-1u-lQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3199" y="-1450"/>
+            <point key="canvasLocation" x="2525" y="-1450"/>
         </scene>
     </scenes>
     <resources>

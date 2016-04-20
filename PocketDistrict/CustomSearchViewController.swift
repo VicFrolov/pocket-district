@@ -14,6 +14,12 @@ class CustomSearchTableViewController: UITableViewController {
 
     @IBOutlet weak var searchQ: UITextField!
     @IBOutlet weak var searchRadius: UISlider!
+    @IBOutlet weak var radiusLabel: UILabel!
+
+    @IBAction func sliderValueChanged(sender: AnyObject) {
+        radiusLabel.text = NSString(format: "%.2f", searchRadius.value) as String
+        radiusLabel.text = radiusLabel.text! + " Miles"
+    }
     
     var searchLatitude:String?
     var searchLongitude:String?
