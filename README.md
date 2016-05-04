@@ -45,7 +45,7 @@ The holy grail of searching, fully customizable with a whole lot of options.
 * Throw in some keywords
 * Advanced filtering like ignoring users or words
 
-##Results
+#Results
 You will get your results in list and map form, showing you exactly what's happening when and where!
 <img src="https://github.com/VicFrolov/pocket-district/blob/master/images/resultsMap.PNG" width="300">
 <img src="https://github.com/VicFrolov/pocket-district/blob/master/images/resultsList.PNG" width="300">
@@ -53,7 +53,7 @@ You will get your results in list and map form, showing you exactly what's happe
 ####Saving Results and Search Queries
 You can save any results you find to your profile. Liked what someone said about a bar and wanted to remember the name of the place? Save it with a quick tap of the finger. Have a custom search that you want to do over and over again? Save it and use it in quick search!
  
-##Profiles
+#Profiles
 PocketDistrict users can interact with other members of the community, by sharing their interests and results
 <img src="https://github.com/VicFrolov/pocket-district/blob/master/images/userProfile.PNG" width="320">
 
@@ -62,7 +62,7 @@ PocketDistrict users can interact with other members of the community, by sharin
 ####Be Social
 Link any of your social media accounts (Facebook, Yelp, Instagram, Yelp, Twitter) and interact with the results! You can retweet, like photos, and send messages to interact with people in your community or across the world!
 
-##Why use it?
+#Why use it?
 ####World Perspective
 You can get a world perspective in topics of your choice. For example, want to know what people are thinking in Paris about the US Elections? Type in Eiffel Tower for location, add a 30 mile radius and use keywords like "Trump" or "Presidential elections".
 
@@ -78,10 +78,10 @@ Thinking of opening a new business? See who the competitors are in the area and 
 Already have a business? See what people are saying with an easy search.
 
 
-###About
-This was created for Loyola Marymount University's computer science 402 final project during the Spring of 2016. made with love and will be most definitely developed further.
+##About
+This was created for Loyola Marymount University's computer science 402 final project during the Spring of 2016. Made with love by Victor Frolov, and will be most definitely developed further. 
 
-### Acknowledgments
+##Acknowledgments
 PocketDistrict makes use of the following libraries:
 * [Alamofire](https://github.com/Alamofire/Alamofire)
 * [AlamofireImage](https://github.com/Alamofire/AlamofireImage)
