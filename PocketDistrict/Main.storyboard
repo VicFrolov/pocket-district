@@ -855,7 +855,7 @@ type in an address, school or landmark         </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kwB-Re-4oj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3209" y="-726"/>
+            <point key="canvasLocation" x="3265" y="-799"/>
         </scene>
         <!--Tweet Results-->
         <scene sceneID="jwJ-1q-mRJ">
@@ -959,7 +959,7 @@ type in an address, school or landmark         </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gG-a4-rrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1221" y="206"/>
+            <point key="canvasLocation" x="1203" y="421"/>
         </scene>
         <!--Choose a Category-->
         <scene sceneID="RO2-t8-WI6">
@@ -1532,7 +1532,7 @@ type in an address, school or landmark         </string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUa-YQ-ktB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4122" y="507"/>
+            <point key="canvasLocation" x="3284" y="521"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aGv-jz-iaf">
@@ -1597,15 +1597,64 @@ type in an address, school or landmark         </string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOb-VF-sgX" userLabel="Sizer">
-                                        <rect key="frame" x="0.0" y="477" width="600" height="286"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="0.0" y="206" width="600" height="557"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LA" translatesAutoresizingMaskIntoConstraints="NO" id="wPy-FE-CaM">
+                                                <rect key="frame" x="20" y="30" width="560" height="160"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="160" id="cv1-vn-D3G"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cafelore" translatesAutoresizingMaskIntoConstraints="NO" id="eGu-pR-2qu">
+                                                <rect key="frame" x="20" y="220" width="560" height="160"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="160" id="3rI-6r-FB7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved Searches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0e-SX-lcg">
+                                                <rect key="frame" x="20" y="150" width="560" height="40"/>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="azB-4V-QU9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved Echoes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUR-U0-XhS">
+                                                <rect key="frame" x="20" y="340" width="560" height="40"/>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Vjc-HO-6iv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.76688701923076918" green="0.76688701923076918" blue="0.76688701923076918" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="286" id="Bbh-Ih-R1g"/>
-                                            <constraint firstAttribute="height" constant="286" id="hXj-zg-Ai7"/>
+                                            <constraint firstItem="eGu-pR-2qu" firstAttribute="top" secondItem="wPy-FE-CaM" secondAttribute="bottom" constant="30" id="10S-TL-yaU"/>
+                                            <constraint firstItem="N0e-SX-lcg" firstAttribute="top" secondItem="sOb-VF-sgX" secondAttribute="top" constant="150" id="1uN-CI-OFf"/>
+                                            <constraint firstAttribute="trailing" secondItem="eGu-pR-2qu" secondAttribute="trailing" constant="20" id="7bO-Yf-cD1"/>
+                                            <constraint firstAttribute="height" constant="557" id="Bbh-Ih-R1g"/>
+                                            <constraint firstItem="N0e-SX-lcg" firstAttribute="bottom" secondItem="wPy-FE-CaM" secondAttribute="bottom" id="GCG-4H-3sX"/>
+                                            <constraint firstAttribute="trailing" secondItem="vUR-U0-XhS" secondAttribute="trailing" constant="20" id="HzB-XK-aBN"/>
+                                            <constraint firstItem="wPy-FE-CaM" firstAttribute="top" secondItem="sOb-VF-sgX" secondAttribute="top" constant="30" id="IyZ-zr-d1y"/>
+                                            <constraint firstItem="N0e-SX-lcg" firstAttribute="leading" secondItem="sOb-VF-sgX" secondAttribute="leading" constant="20" id="Mci-iY-dlg"/>
+                                            <constraint firstItem="eGu-pR-2qu" firstAttribute="leading" secondItem="sOb-VF-sgX" secondAttribute="leading" constant="20" id="N27-PN-k4e"/>
+                                            <constraint firstAttribute="trailing" secondItem="wPy-FE-CaM" secondAttribute="trailing" constant="20" id="R2H-Gh-g1p"/>
+                                            <constraint firstItem="wPy-FE-CaM" firstAttribute="leading" secondItem="sOb-VF-sgX" secondAttribute="leadingMargin" id="XK5-hs-RMX"/>
+                                            <constraint firstItem="vUR-U0-XhS" firstAttribute="top" secondItem="N0e-SX-lcg" secondAttribute="bottom" constant="150" id="dBR-hW-FIU"/>
+                                            <constraint firstAttribute="trailing" secondItem="N0e-SX-lcg" secondAttribute="trailing" constant="20" id="hbP-iC-TfN"/>
+                                            <constraint firstItem="wPy-FE-CaM" firstAttribute="top" secondItem="sOb-VF-sgX" secondAttribute="top" constant="126" id="ppO-8Q-2VU"/>
+                                            <constraint firstItem="vUR-U0-XhS" firstAttribute="leading" secondItem="sOb-VF-sgX" secondAttribute="leading" constant="20" id="qc5-jB-uBk"/>
+                                            <constraint firstItem="wPy-FE-CaM" firstAttribute="leading" secondItem="sOb-VF-sgX" secondAttribute="leading" constant="20" id="xaa-He-3sq"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="hXj-zg-Ai7"/>
+                                                <exclude reference="XK5-hs-RMX"/>
+                                                <exclude reference="ppO-8Q-2VU"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -1620,66 +1669,6 @@ type in an address, school or landmark         </string>
                                             <segue destination="elr-KJ-qsQ" kind="presentation" id="2Yn-hV-QhS"/>
                                         </connections>
                                     </button>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9UP-Jf-yhK">
-                                        <rect key="frame" x="8" y="300" width="592" height="363"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="363" id="kVj-53-HBo"/>
-                                        </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iyP-a3-Iah">
-                                            <size key="itemSize" width="50" height="50"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        </collectionViewFlowLayout>
-                                        <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oau-fK-kpQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </view>
-                                                <color key="backgroundColor" red="1" green="0.40784313729999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
-                                            </collectionViewCell>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Nva-Di-e5D">
-                                                <rect key="frame" x="60" y="0.0" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </view>
-                                            </collectionViewCell>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lhx-zZ-4Kz">
-                                                <rect key="frame" x="120" y="0.0" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </view>
-                                            </collectionViewCell>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Wzd-d5-CN5">
-                                                <rect key="frame" x="181" y="0.0" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </view>
-                                            </collectionViewCell>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fsK-JL-oDU">
-                                                <rect key="frame" x="241" y="0.0" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </view>
-                                            </collectionViewCell>
-                                        </cells>
-                                    </collectionView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Uga-KK-CIz" firstAttribute="leading" secondItem="AHO-H9-n2d" secondAttribute="leading" id="0IN-oY-hVD"/>
@@ -1690,16 +1679,13 @@ type in an address, school or landmark         </string>
                                     <constraint firstItem="MSr-Qc-uLC" firstAttribute="top" secondItem="Uga-KK-CIz" secondAttribute="bottom" constant="8" symbolic="YES" id="Fc1-5h-aIZ"/>
                                     <constraint firstItem="Uga-KK-CIz" firstAttribute="leading" secondItem="MSr-Qc-uLC" secondAttribute="leading" id="Ph5-df-nDe"/>
                                     <constraint firstAttribute="bottom" secondItem="Uga-KK-CIz" secondAttribute="bottom" constant="579" id="SG9-YL-x1N"/>
-                                    <constraint firstItem="9UP-Jf-yhK" firstAttribute="leading" secondItem="AHO-H9-n2d" secondAttribute="leading" id="TPj-Ht-sIK"/>
                                     <constraint firstAttribute="bottom" secondItem="sOb-VF-sgX" secondAttribute="bottom" constant="37" id="Xei-Og-qRN"/>
                                     <constraint firstItem="sOb-VF-sgX" firstAttribute="leading" secondItem="0iM-dQ-Vo8" secondAttribute="leading" id="cfw-EH-dh6"/>
                                     <constraint firstItem="Uga-KK-CIz" firstAttribute="top" secondItem="0iM-dQ-Vo8" secondAttribute="top" constant="79" id="ch7-sm-lRr"/>
                                     <constraint firstItem="sOb-VF-sgX" firstAttribute="top" secondItem="0iM-dQ-Vo8" secondAttribute="top" constant="477" id="d7p-Zz-JnB"/>
                                     <constraint firstAttribute="bottom" secondItem="sOb-VF-sgX" secondAttribute="bottom" constant="-36" id="g1T-vf-UTH"/>
-                                    <constraint firstItem="9UP-Jf-yhK" firstAttribute="trailing" secondItem="sOb-VF-sgX" secondAttribute="trailing" id="p6H-EM-x0F"/>
                                     <constraint firstItem="Uga-KK-CIz" firstAttribute="leading" secondItem="0iM-dQ-Vo8" secondAttribute="leadingMargin" id="pUF-Uj-BiC"/>
                                     <constraint firstItem="idG-Ly-uQi" firstAttribute="top" secondItem="MSr-Qc-uLC" secondAttribute="top" constant="-40" id="qt3-GB-cwE"/>
-                                    <constraint firstAttribute="bottom" secondItem="9UP-Jf-yhK" secondAttribute="bottom" constant="64" id="s6R-UJ-Lje"/>
                                     <constraint firstAttribute="bottom" secondItem="Uga-KK-CIz" secondAttribute="bottom" constant="579" id="xCd-QM-JX9"/>
                                 </constraints>
                                 <variation key="default">
@@ -1735,7 +1721,7 @@ type in an address, school or landmark         </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0d2-zB-Nue" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2563" y="507"/>
+            <point key="canvasLocation" x="1883" y="521"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SBD-hQ-9Rg">
@@ -1745,6 +1731,12 @@ type in an address, school or landmark         </string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wuf-dx-ihT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.1049748897" green="0.32086058820000002" blue="0.51568509620000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1753,7 +1745,7 @@ type in an address, school or landmark         </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCM-cO-bE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3310" y="507"/>
+            <point key="canvasLocation" x="2572" y="521"/>
         </scene>
         <!--Custom Search Table View Controller-->
         <scene sceneID="T8c-PT-Hxh">
@@ -1939,6 +1931,7 @@ type in an address, school or landmark         </string>
     </scenes>
     <resources>
         <image name="Contacts-50" width="25" height="25"/>
+        <image name="LA" width="1800" height="1131"/>
         <image name="Search Filled-50" width="25" height="25"/>
         <image name="Twitter-50" width="25" height="25"/>
         <image name="about" width="25" height="25"/>

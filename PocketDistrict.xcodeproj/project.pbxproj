@@ -15,7 +15,6 @@
 		381162191C9CE740007CD000 /* LoginPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381162181C9CE740007CD000 /* LoginPromptViewController.swift */; };
 		381524DB1C9D29C600A16144 /* CustomSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381524DA1C9D29C600A16144 /* CustomSearchViewController.swift */; };
 		3828086F1CB46ED800529672 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828086E1CB46ED800529672 /* ProfileTableViewController.swift */; };
-		3830D54A1CC104AC00F55890 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3830D5491CC104AC00F55890 /* LaunchScreen.xib */; };
 		3830D54D1CC106F400F55890 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3830D54C1CC106F400F55890 /* FXBlurView.m */; };
 		3830D5501CC6473800F55890 /* customSearchLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3830D54F1CC6473800F55890 /* customSearchLocationTableViewController.swift */; };
 		38339ADE1CC0D50400AC9AAB /* userProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38339ADD1CC0D50400AC9AAB /* userProfileViewController.swift */; };
@@ -47,9 +46,8 @@
 		381162181C9CE740007CD000 /* LoginPromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPromptViewController.swift; sourceTree = "<group>"; };
 		381524DA1C9D29C600A16144 /* CustomSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchViewController.swift; sourceTree = "<group>"; };
 		3828086E1CB46ED800529672 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
-		3830D5481CC104AC00F55890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		3830D54B1CC106F400F55890 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = "../../../../../Downloads/TB_TwitterUI-master/TB_TwitterHeader/FXBlurView.h"; sourceTree = "<group>"; };
-		3830D54C1CC106F400F55890 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = "../../../../../Downloads/TB_TwitterUI-master/TB_TwitterHeader/FXBlurView.m"; sourceTree = "<group>"; };
+		3830D54B1CC106F400F55890 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = ../FXBlurView.h; sourceTree = "<group>"; };
+		3830D54C1CC106F400F55890 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = ../FXBlurView.m; sourceTree = "<group>"; };
 		3830D54F1CC6473800F55890 /* customSearchLocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customSearchLocationTableViewController.swift; sourceTree = "<group>"; };
 		38339ADD1CC0D50400AC9AAB /* userProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfileViewController.swift; sourceTree = "<group>"; };
 		38339AE11CC0FA9600AC9AAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 				380182EB1C994A0300885E91 /* View */,
 				380182EA1C9949DD00885E91 /* Controller */,
 				3860FF9E1C9637000095A2BF /* PocketDistrict-Bridging-Header.h */,
-				3830D5491CC104AC00F55890 /* LaunchScreen.xib */,
 				3860FF9C1C9636BB0095A2BF /* Main.storyboard */,
 				38339AE11CC0FA9600AC9AAB /* Images.xcassets */,
 			);
@@ -251,7 +248,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3830D54A1CC104AC00F55890 /* LaunchScreen.xib in Resources */,
 				3860FFAF1C9637010095A2BF /* background.mp4 in Resources */,
 				38339AE21CC0FA9600AC9AAB /* Images.xcassets in Resources */,
 				3860FF9D1C9636BB0095A2BF /* Main.storyboard in Resources */,
@@ -340,18 +336,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3830D5491CC104AC00F55890 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3830D5481CC104AC00F55890 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			path = "../../../../../Downloads/TB_TwitterUI-master/TB_TwitterHeader";
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3860FF971C9635FA0095A2BF /* Debug */ = {
